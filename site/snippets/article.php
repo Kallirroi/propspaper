@@ -37,14 +37,14 @@
 					<?php endif ?>
 				</div>
  -->
-				<div class="socbtn">
+<!-- 				<div class="socbtn">
 					<span class="icon-socials share">
 					<div class="popup">
 						<a class="share--googleplus" href="#"><span class="icon-googleplus"></span></a>
 						<a class="share--twitter" href="#" data-message="Hey! This is awesome, you should read this: "><span class="icon-twitter"></span></a>
 						<a class="share--facebook"href="#"><span class="icon-facebook"></span></a> 
 					</div>
-				</div>
+				</div> -->
 			</div>
 			 
 		 
