@@ -53,7 +53,6 @@
 
 			<?php if (!$article->text()->empty()): ?>
 			<div class="post-content">
-				<?php echo kirbytext(str::short($article->text(), 50)); ?>
 			</div>
 			<?php endif ?>
 	
