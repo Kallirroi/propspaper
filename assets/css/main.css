@@ -3,9 +3,8 @@
  * Main CSS
  *
  * @package    Pedesa Magazine Theme
- * @copyright  2015 Aristotheme - Levent Usta
+ * @copyright  2017 Kalli
  *
- * @version  1.0.0
  */
 /**
  * CONTENT:
@@ -339,12 +338,12 @@ th {
 }
 
 body {
-  font-family: BloggerSans;
+  font-family: 'Helvetica Neue', BloggerSans;
   font-size: 18px;
   color: #1E1E1E;
   letter-spacing: 1px;
   line-height: 28px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 p {
@@ -893,7 +892,7 @@ img {
 }
 
 .search-box input.search-bar:hover {
-  cursor: text;
+  cursor: pointer;
 }
 
 .search-box .btn-close {
@@ -1122,7 +1121,7 @@ img {
 
 .info-modal-content a:hover {
   color: #fff;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.5s;
@@ -1608,7 +1607,7 @@ nav[role="navigation"] {
   margin-left: 20px;
   margin-right: 20px;
   overflow: hidden;
-  height: 150px;
+  height: 100px !important;
   /*border-top: 1px solid #1E1E1E;*/
 }
 
@@ -1879,7 +1878,6 @@ nav[role="navigation"] {
 
 @media (min-width: 71.25em) {
   .header {
-    height: 300px;
     margin-left: 60px;
     margin-right: 60px;
   }

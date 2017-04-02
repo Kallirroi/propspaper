@@ -25,7 +25,7 @@
 			<a href="<?php echo $article->url() ?>">
 				<div class="post-overlay">
 					<div class="post-logo">
-						<img src="<?php echo url('assets/img/logo-hover.svg') ?>" width="152" height="196" alt="<?php echo html($article->title()) ?>" />
+<!-- 						<img src="<?php echo url('assets/img/logo-hover.svg') ?>" width="152" height="196" alt="<?php echo html($article->title()) ?>" /> -->
 						<noscript>
 							<img 
 								src="<?php echo url('assets/img/logo-hover.svg') ?>" 
