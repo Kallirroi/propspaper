@@ -893,7 +893,7 @@ img {
 }
 
 .search-box input.search-bar:hover {
-  cursor: pointer;
+  cursor: text;
 }
 
 .search-box .btn-close {
@@ -1031,7 +1031,7 @@ img {
   outline: none;
   width: 100%;
   height: 30px;
-  padding: 2em 0 0 0;
+  padding: 1em 0 0.5em 0;
   margin: 0;
   letter-spacing: 1px;
   -webkit-appearance: none;
@@ -1941,13 +1941,14 @@ nav[role="navigation"] {
   .search-box input:-moz-placeholder::before {
     font-size: 30px;
   }
+
   .active.search-box input[type=text] {
-    font-size: 48px;
-    line-height: 48px;
-    height: 60px;
-    padding: 3em 0 0 0;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 5em 0 1em 0;
     letter-spacing: 3px;
   }
+
   body {
     font-size: 20px;
     line-height: 28px;
