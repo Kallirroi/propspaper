@@ -27,6 +27,13 @@
 	<p class="help">Press <strong>return</strong> to search. Press <strong>Esc</strong> to cancel.</p>
 	</form>
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	
+	<!-- custom javascript -->
+	<?php foreach($page->files()->filterBy('extension', 'js') as $js): ?>
+	<?php echo js($js->url()) ?>
+	<?php endforeach ?>
+
 </header>
 
 <?php snippet('about') ?>
