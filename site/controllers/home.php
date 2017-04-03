@@ -14,7 +14,7 @@ return function($site, $pages, $page) {
   }
  
   // create a shortcut for pagination
-  $articles = $articles->paginate(c::get('articles.postPerPage', 6));
+  $articles = $articles->paginate(c::get('articles.postPerPage', 15));
   $pagination = $articles->pagination();
 
   // pass $articles and $pagination to the template
