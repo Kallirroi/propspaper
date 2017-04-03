@@ -1,11 +1,16 @@
 
 <!-- Header (logo/Browse button/Info/Search Input) -->
 <header class="header">
+
+	
+
 	<div class="logo">
 		<a href="<?php echo url() ?>">
 			<img src="<?php echo url('assets/img/logo.svg') ?>" width="72" height="90" alt="<?php echo $site->title()->html() ?>" />
 		</a>
 	</div>
+
+
 
 	<a href="#" id="open-close" class="browse-link">
 		<span class="icon-tag"></span>
@@ -27,12 +32,6 @@
 	<p class="help">Press <strong>return</strong> to search. Press <strong>Esc</strong> to cancel.</p>
 	</form>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-	
-	<!-- custom javascript -->
-	<?php foreach($page->files()->filterBy('extension', 'js') as $js): ?>
-	<?php echo js($js->url()) ?>
-	<?php endforeach ?>
 
 </header>
 

@@ -64,3 +64,5 @@ of the system, please check out http://getkirby.com/docs/advanced/options
 c::set('relativedate.fuzzy', false);
 c::set('relativedate.length', 1);
 c::set('markdown.extra', true);
+
+c::set('debug',false);

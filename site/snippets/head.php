@@ -18,6 +18,13 @@
     <?php endif ?>
   <?php endforeach ?>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  
+  <!-- custom javascript -->
+  <?php foreach($page->files()->filterBy('extension', 'js') as $js): ?>
+  <?php echo js($js->url()) ?>
+  <?php endforeach ?>
+  
   <?php echo css('assets/css/main.css') ?>
   <?php echo css('@auto') ?>
   <?php echo js("assets/js/modernizr.custom.js") ?>

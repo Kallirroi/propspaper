@@ -80,6 +80,8 @@
 	<?php endforeach ?>
 </section>
 
+
+
 <!-- <?php snippet('pagination') ?> -->
 
 <?php snippet('footer') ?>
