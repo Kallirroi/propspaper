@@ -2,8 +2,6 @@
 <!-- Header (logo/Browse button/Info/Search Input) -->
 <header class="header">
 
-	
-
 	<div class="logo">
 		<a href="<?php echo url() ?>">
 			<img src="<?php echo url('assets/img/logo.svg') ?>" width="72" height="90" alt="<?php echo $site->title()->html() ?>" />

@@ -19,6 +19,7 @@
   <?php endforeach ?>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
   
   <!-- custom javascript -->
   <?php foreach($page->files()->filterBy('extension', 'js') as $js): ?>
