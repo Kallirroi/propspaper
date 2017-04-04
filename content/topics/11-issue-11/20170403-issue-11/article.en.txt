@@ -12,11 +12,30 @@ Author: kallirroi
 
 Text: 
 
-The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft jumping zebras vex. Two driven jocks help fax my big quiz. Quick, Baz, get my woven flax jodhpurs! "Now fax quiz Jack! " my brave ghost pled.
+PROPS: What is the role of images in your research?
+ 
+Francois: To a cosmologist like me, imaging the night sky through powerful telescopes opens an invaluable yet indirect window into the content of our Universe. Why indirect? Because the billions of galaxies that we do observe are just the tip of the iceberg. They are sprinkled onto a massive underlying cosmic web of dark matter that, despite accounting for most of the total matter of the Universe, is completely invisible. Its presence is betrayed by its gravitational effects. In particular, very massive dark matter structures effectively act as gravitational lenses, distorting the images of objects located behind them, much like objects are distorted and magnified if you look at them through a magnifying glass. Although this lensing effect is generally very small, it is ubiquitous on the sky - virtually every galaxy that we see is actually being lensed by some amount.
+ 
+This is where images play a crucial role in the science that I do. By taking images of millions of galaxies (and even billions in the near future) and precisely measuring their shapes, we can detect the deformations caused by gravitational lensing, and from there infer the distribution of dark matter. But with such a small effect, devil is in the details. Great care must be taken in the acquisition and processing of these images as to not introduce any additional deformations, which would otherwise bias our analysis down the road. In order to detect and correct for any errors in this delicate measurement process, we rely on complex simulations of galaxy images that aim to mimic as closely as possible how real galaxies would be observed by our telescopes.
+ 
+And here enters machine learning. At the core of our simulations we use a generative neural network, a computer algorithm that can learn by itself how real galaxies are supposed to look like and can then "imagine" new galaxies for us, different from the one we presented it during training and yet similar in every respect. This procedure allows us to produce a rich set of life-like image simulations, which we can use to thoroughly and precisely test our measurement tools.
+ 
+The beauty of this gravitational lensing effect is that by looking at images of galaxies, we can actually sense the unseen parts of the Universe. One of its most exciting applications is to investigate the nature of Dark Energy, a mysterious force that seems to be driving an accelerated expansion of the very fabric of the Universe.
+ 
+ 
+ 
+ 
+ 
+ 
 
-Five quacking zephyrs jolt my wax bed. Flummoxed by job, kvetching W. zaps Iraq. Cozy sphinx waves quart jug of bad milk. A very bad quack might jinx zippy fowls. Few quips galvanized the mock jury box. Quick brown dogs jump over the lazy fox. The jay, pig, fox, zebra, and my wolves quack! Blowzy red vixens fight for a quick jump. Joaquin Phoenix was gazed by MTV for luck. A wizard’s job is to vex chumps quickly in fog. Watch "Jeopardy! ", Alex Trebek's fun TV quiz game. Woven silk pyjamas exchanged for blue quartz. Brawny gods just flocked up to quiz and vex him.
 
-Adjusting quiver and bow, Zompyc[1] killed the fox. My faxed joke won a pager in the cable TV quiz show. Amazingly few discotheques provide jukeboxes. My girl wove six dozen plaid jackets before she quit. Six big devils from Japan quickly forgot how to waltz. Big July earthquakes confound zany experimental vow. Foxy parsons quiz and cajole the lovably dim wiki-girl. Have a pick: twenty six letters - no forcing a jumbled quiz! Crazy Fredericka bought many very exquisite opal jewels. Sixty zippers were quickly picked from the woven jute bag. A quick movement of the enemy will jeopardize six gunboats. All questions asked by five watch experts amazed the judge. Jack quietly moved up front and seized the big ball of wax. The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. Sex-charged fop blew my
+
+BIO
+\---------
+ 
+Francois Lanusse is a cosmologist at Carnegie Mellon University. Most of his research has been focused on building image and signal processing tools for various applications in cosmology and astrophysics.
+
+More at: flanusse.net.
 
 ----
 

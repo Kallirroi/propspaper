@@ -1154,13 +1154,11 @@ img {
 /*-------------------------------------------------*/
 /* =  9. post-features
 /*-------------------------------------------------*/
-.post-container {
+post-container {
   *zoom: 1;
   margin-left: -20px;
   margin-right: -20px;
   margin: 60px auto;
-  display: flex;
-  flex-wrap: wrap;   
 }
 
 .post-container:before, .post-container:after {
@@ -1177,10 +1175,10 @@ img {
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 40px;
-  flex: 0 0 22.2%;
-  align-self: flex-start;
-  border: 1px solid red;
+  display: block;
+  float: left;
 }
+
 
 .post-container .post-item header {
   position: relative;

@@ -130,7 +130,6 @@ $(document).ready(function(){
 		},
 		transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
 		support = { transitions : Modernizr.csstransitions };
-
 	function toggleOverlay() {
 		if( classie.has( overlay, 'open' ) ) {
 			classie.remove( overlay, 'open' );
