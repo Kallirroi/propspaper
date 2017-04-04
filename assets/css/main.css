@@ -98,6 +98,7 @@
 /*-------------------------------------------------*/
 html {
   font-family: sans-serif;
+
   /* 1 */
   -ms-text-size-adjust: 100%;
   /* 2 */
@@ -1943,7 +1944,7 @@ nav[role="navigation"] {
   .active.search-box input[type=text] {
     font-size: 24px;
     line-height: 24px;
-    padding: 5em 0 1em 0;
+    padding: 3em 0 1em 0;
     letter-spacing: 3px;
   }
 

@@ -2,7 +2,7 @@
 <section class="post-container">
 
 	<?php foreach($articles as $article): ?>
-
+		
 	<article class="post-item grid-sizer">
 		
 		<header>

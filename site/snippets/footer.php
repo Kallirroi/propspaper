@@ -1,6 +1,6 @@
 <footer class="footer">
 	
-	<?php snippet('socials') ?>
+	<!-- <?php snippet('socials') ?> -->
 
 <!-- 	<a href="#" class="back-to-top">
 		<span class="icon-arrow"></span>
