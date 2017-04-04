@@ -753,8 +753,10 @@ img {
 }
 
 .header .logo img:hover {
-  -webkit-animation-name: bounce;
-  animation-name: bounce;
+/*  -webkit-animation-name: bounce;
+  animation-name: bounce;*/
+  background: #7BEEC7;
+  height: 30px;
 }
 
 .header .browse-link {
