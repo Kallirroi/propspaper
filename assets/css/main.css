@@ -1085,7 +1085,7 @@ img {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.92);
   text-align: center;
   overflow-y: scroll;
   /* has to be scroll, not auto */
@@ -1105,7 +1105,7 @@ img {
   display: block;
   margin: 0 auto;
   color: #fff;
-  padding-top: 60px;
+  padding-top: 30px;
 }
 
 .info-modal-content h2 {
@@ -1115,6 +1115,7 @@ img {
 
 .info-modal-content p {
   text-align: left;
+  margin-top: 10px;
 }
 
 .info-modal-content a {
@@ -1620,7 +1621,7 @@ nav[role="navigation"] {
 .footer > a {
   font-size: 12px;
   letter-spacing: 1px;
-  text-decoration: none;
+  text-decoration: none;   
 }
 
 .footer .languages {
