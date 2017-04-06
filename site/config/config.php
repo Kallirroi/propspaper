@@ -65,4 +65,4 @@ c::set('relativedate.fuzzy', false);
 c::set('relativedate.length', 1);
 c::set('markdown.extra', true);
 
-c::set('debug',false);
+c::set('debug',true);

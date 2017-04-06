@@ -450,9 +450,9 @@ h4 {
   content: "\e907";
 }
 
-.icon-search:before {
+/*.icon-search:before {
   content: "\e908";
-}
+}*/
 
 .icon-socials:before {
   content: "\e909";
@@ -891,7 +891,7 @@ img {
   outline: none;
   line-height: 30px;
   margin-top: 12px;
-  background: url(../img/icons/search.svg) center no-repeat;
+  background: url(../img/icons/search_text.svg) center no-repeat;
 }
 
 .search-box input.search-bar:hover {
@@ -1035,7 +1035,7 @@ img {
   height: 30px;
   padding: 1em 0 0.5em 0;
   margin: 0;
-  letter-spacing: 1px;
+  letter-spacing: 0.1em;
   -webkit-appearance: none;
 }
 
@@ -1972,7 +1972,7 @@ nav[role="navigation"] {
     font-size: 24px;
     line-height: 24px;
     padding: 3em 0 1em 0;
-    letter-spacing: 3px;
+    letter-spacing: 0.1em;
   }
 
   body {

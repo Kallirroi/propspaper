@@ -25,9 +25,7 @@
 	
 	<form class="search-box">
 	<div class="btn-close"><span class="icon-close"></span></div>
-	<input class="search-bar" type="text" value="" placeholder="Search" data-active-placeholder="Type to search..." name="s">
- 	
-	<p class="help">Press <strong>return</strong> to search. Press <strong>Esc</strong> to cancel.</p>
+	<input class="search-bar" type="text" value="" placeholder="Search" data-active-placeholder="Search..." name="s">
 	</form>
 
 

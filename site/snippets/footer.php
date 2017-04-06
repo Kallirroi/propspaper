@@ -9,7 +9,8 @@
 	<?php snippet('languages') ?> -->
 
 </footer>
-
+  <?php echo js("assets/js/jquery.min.js") ?>
+  <?php echo js("assets/js/modernizr.custom.js") ?>
 	<?php echo js("assets/js/main.min.js") ?>
 	<?php echo js("@auto") ?>
 

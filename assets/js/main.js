@@ -3,7 +3,7 @@ $(document).ready(function(){
 	/* =  owl-carousel (Categories Slider)
 	/*-------------------------------------------------*/
 
-	$(window).load(function(){
+	$(window).on('load',function(){
 
 		var $owl = $('.owl-carousel');
 		$owl.owlCarousel({
@@ -70,7 +70,7 @@ $(document).ready(function(){
 	/* =  browse-link
 	/*-------------------------------------------------*/
 
-	$(window).load(function(){
+	$(window).on('load',function(){
 
 		var toggles = document.querySelectorAll(".browse-link");
 
@@ -91,7 +91,7 @@ $(document).ready(function(){
 	/* =  open-close browse categories
 	/*-------------------------------------------------*/
 
-	$(window).load(function(){
+	$(window).on('load',function(){
 		var $openclose = $('#open-close');
 		 
 
@@ -108,7 +108,7 @@ $(document).ready(function(){
 	/* =  search
 	/*-------------------------------------------------*/
   
-    	$(".search-box").first().expandSearch();
+    $(".search-box").first().expandSearch();
 
 
     	
@@ -116,7 +116,7 @@ $(document).ready(function(){
 	/* =  info modal popup
 	/*-------------------------------------------------*/
 
-	$(window).load(function(){
+	$(window).on('load',function(){
  	
  	var triggerBttn = document.getElementById( 'trigger-info-modal' ),
 		overlay = document.querySelector( 'section.info-modal' ),
@@ -162,7 +162,7 @@ $(document).ready(function(){
 	/* =  isotope - post items
 	/*-------------------------------------------------*/
 
-	$(window).load(function(){
+	$(window).on('load',function(){
 
 		var $container = $('.post-container');
 		
