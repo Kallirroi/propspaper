@@ -21,16 +21,14 @@
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script> -->
   <!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->
   <!-- custom css -->
-  <?php foreach($page->files()->filterBy('extension', 'css') as $css): ?>
-  <?php echo css($css->url()) ?>
-  <?php endforeach ?>  
 
   <?php echo css('@auto') ?>
   <?php echo css('assets/css/main.css') ?> 
 
+  <?php foreach($page->files()->filterBy('extension', 'css') as $css): ?>
+  <?php echo css($css->url()) ?>
+  <?php endforeach ?>  
 
-
-  
 </head>
 <body>
 
