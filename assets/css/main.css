@@ -438,6 +438,7 @@ h4 {
   content: "\e904";
 }
 
+
 .icon-instagram:before {
   content: "\e905";
 }
@@ -1078,6 +1079,11 @@ img {
 /*-------------------------------------------------*/
 /* =  8. modal popup
 /*-------------------------------------------------*/
+
+#trigger-info-modal {
+  font-size: 18px;
+}
+
 /* Overlay style */
 .info-modal {
   position: fixed;
@@ -1085,7 +1091,7 @@ img {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.92);
+  background: rgba(0, 0, 0, 0.9);
   text-align: center;
   overflow-y: scroll;
   /* has to be scroll, not auto */
