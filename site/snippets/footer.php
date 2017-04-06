@@ -1,13 +1,5 @@
 <footer class="footer">
-	
-	<!-- <?php snippet('socials') ?> -->
-
-<!-- 	<a href="#" class="back-to-top">
-		<span class="icon-arrow"></span>
-	</a>
-
-	<?php snippet('languages') ?> -->
-
+	made by <a href="http://kalli.website/">K.</a>
 </footer>
 	<?php echo js("assets/js/jquery.min.js") ?>
 	<?php echo js("assets/js/classie.js") ?>

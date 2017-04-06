@@ -1611,8 +1611,16 @@ nav[role="navigation"] {
   margin-left: 20px;
   margin-right: 20px;
   overflow: hidden;
-  height: 100px !important;
+  height: 50px;
+  font-size: 12px;
+  letter-spacing: 1px;
   /*border-top: 1px solid #1E1E1E;*/
+}
+
+.footer > a {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-decoration: none;
 }
 
 .footer .languages {
@@ -2025,7 +2033,7 @@ nav[role="navigation"] {
   .footer {
     margin-left: 60px;
     margin-right: 60px;
-    height: 300px;
+    height: 50px;
   }
   .footer .languages ul li a {
     font-size: 24px;
