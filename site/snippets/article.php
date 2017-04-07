@@ -25,21 +25,27 @@
 			<?php echo $page->text()->kirbytext() ?>
 
 			<div class="post-meta">
-<!-- 				<div class="author"> <?php echo (relativeDate($page->date('Y-m-d'))) ?> <?php echo l::get('by') ?>
-					<?php if ($page->author()): ?>
+
+ 				<div class="author"> 
+<!-- 					<?php if ($page->author()): ?>
 						<?php if ($page->author()->firstName() || $page->author()->lastName()): ?>
 						<strong><?php echo $page->author()->firstName() ?> <?php echo $page->author()->lastName() ?></strong>
 						<?php else: ?>
 						<?php echo $page->author()->username() ?>
 						<?php endif ?>
-					<?php endif ?>
-				</div> -->
+					<?php endif ?> -->
+					<?php foreach($tags as $tag): ?>
+					    <a href="<?php echo url('issues/' . url::paramsToString(['tag' => $tag])) ?>">
+					      <?php echo html($tag) ?>
+					    </a>
+					<?php endforeach ?>
+				</div> 
+
 				<div class="socbtn">
 					<span class="icon-socials share">
 					<div class="popup">
-						<a class="share--googleplus" href="#"><span class="icon-googleplus"></span></a>
-						<a class="share--twitter" href="#" data-message="Hey! This is awesome, you should read this: "><span class="icon-twitter"></span></a>
-						<a class="share--facebook"href="#"><span class="icon-facebook"></span></a> 
+						<a class="share--twitter" href="#" data-message="Read "><span class="icon-twitter"></span></a>
+						<a class="share--facebook" href="#"><span class="icon-facebook"></span></a> 
 					</div>
 				</div>
 			</div>

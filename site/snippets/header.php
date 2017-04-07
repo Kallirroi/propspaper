@@ -4,7 +4,7 @@
 
 	<div class="logo">
 		<a href="<?php echo url() ?>">
-			<img src="<?php echo url('assets/img/logo.svg') ?>" width="72" height="90" alt="<?php echo $site->title()->html() ?>" />
+			<img src="<?php echo url('assets/img/logo.png') ?>" width="auto" height="auto" alt="<?php echo $site->title()->html() ?>" />
 		</a>
 	</div>
 

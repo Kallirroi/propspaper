@@ -8,6 +8,5 @@
 	<?php echo js("assets/js/modernizr.custom.js") ?>
 	<?php echo js("assets/js/main.js") ?>
   	<?php snippet('analytics') ?>
-  	<!-- <?php snippet('plugin.panelBar') ?> -->
 </body>
 </html>

@@ -47,7 +47,7 @@
 			<?php endif ?>
 	
                
-<!-- 			<div class="post-meta">
+ 			<div class="post-meta">
 				<ul>	 
 
 					<li class="author"> <?php echo (relativeDate($article->date('Y-m-d'))) ?> <?php echo l::get('by') ?>
@@ -62,7 +62,7 @@
 					</li>
 
 				</ul>
-			</div> -->
+			</div> 
 			 
 		</footer>
 

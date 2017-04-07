@@ -17,17 +17,8 @@ return function($site, $pages, $page) {
   $articles = $articles->paginate(c::get('articles.postPerPage', 15));
   $pagination = $articles->pagination();
 
-
-  // fetch all tags used in projects. pluck($field, 'separator', unique)
-  $tags = $articles->pluck('tags', ',', true);
-
-  if($tag = param('tag')) {
-      $articles = $articles->filterBy('tags', $tag, ',');
-  }
-
   // pass $articles and $pagination to the template
-  return compact('articles', 'pagination', 'tags');
-
+  return compact('articles', 'pagination');
 };
 
  
