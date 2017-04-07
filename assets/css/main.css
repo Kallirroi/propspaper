@@ -735,6 +735,7 @@ img {
 }
 
 .header .logo {
+  z-index: 999;
   position: absolute;
   top: 50%;
   left: 0%;
@@ -744,7 +745,6 @@ img {
 }
 
 .header .logo img {
-  width: 30px;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
@@ -757,7 +757,6 @@ img {
 /*  -webkit-animation-name: bounce;
   animation-name: bounce;*/
   background: #7BEEC7;
-  height: 30px;
 }
 
 .header .browse-link {
@@ -831,6 +830,7 @@ img {
 }
 
 .header .browse-link.is-active .icon-close {
+  z-index: 1001;
   display: none;
 }
 
@@ -839,6 +839,7 @@ img {
 }
 
 .header .nav {
+  z-index: 1000;
   position: absolute;
   top: 50%;
   right: 0%;
@@ -874,6 +875,7 @@ img {
 /* =  7. search
 /*-------------------------------------------------*/
 .search-box {
+  z-index: 1001;
   position: absolute;
   top: 50%;
   right: 0%;
@@ -900,6 +902,7 @@ img {
 }
 
 .search-box .btn-close {
+  z-index: 1002;
   position: absolute;
   top: 50%;
   right: 0%;
@@ -1291,14 +1294,15 @@ post-container {
 
 .post-container .post-item footer .post-meta ul li {
   font-size: 16px;
-  font-style: italic;
   color: #9e9e9e;
+  opacity: 0.6;
 }
 
 .post-container .post-item footer .post-meta ul li a {
   color: #1E1E1E;
-  font-weight: 500;
-  text-decoration: underline;
+  font-weight: 400;
+  text-decoration: none;
+  margin: 0 2px;
 }
 
 .post-container .post-item footer .post-meta ul li a:hover {
@@ -1538,8 +1542,8 @@ nav[role="navigation"] {
 
 .post-wrapper .post-content .post-meta .author a {
   color: #848484;
-  font-weight: 500;
-  text-decoration: underline;
+  font-weight: 400;
+  text-decoration: none;
 }
 
 .post-wrapper .post-content .post-meta .author a:hover {
@@ -2036,10 +2040,33 @@ nav[role="navigation"] {
     margin-top: 25px;
     padding: 0 20px;
   }
+  .post-wrapper .post-media {
+    width: 45%;
+    position: absolute;
+    top: 0px;
+    padding-top: 100px;
+    height: 100vh;
+    padding-bottom: 60px;
+    overflow: scroll;
+  }  
+  .post-wrapper .post-content {
+    width: 45%;
+    position: absolute;
+    height: 100vh;
+    top: 0px;
+    padding-top: 70px;
+    right: 0;
+    padding-right: 120px;
+    overflow: scroll;
+    padding-bottom: 60px;
+    background: #fff;
+    z-index: 1003;
+  }
   .footer {
     margin-left: 60px;
     margin-right: 60px;
     height: 50px;
+    position: relative;
   }
   .footer .languages ul li a {
     font-size: 24px;

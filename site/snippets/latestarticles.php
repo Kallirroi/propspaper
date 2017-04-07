@@ -48,13 +48,18 @@
 	
                
  			<div class="post-meta">
-				<?php if ($article->tags()): ?>
+ 			<ul>
+ 				<li>
+ 					<?php if ($article->tags()): ?>
 					<?php foreach(str::split($article->tags()) as $tag): ?> 
 					    <a href="<?php echo url('issues/' . url::paramsToString(['tag' => $tag])) ?>">
 					      <?php echo html($tag) ?>
 					    </a>
 					<?php endforeach ?>
-				<?php endif ?>
+				<?php endif ?>				
+ 				</li>
+ 			</ul>
+
 			</div> 
 			 
 		</footer>

@@ -1,5 +1,4 @@
 <footer class="footer">
-	<a href="http://kalli.website/">made by K.</a>
 </footer>
 	<?php echo js("assets/js/jquery.min.js") ?>
 	<?php echo js("assets/js/jquery.expand-search.min.js") ?>
