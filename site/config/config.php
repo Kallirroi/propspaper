@@ -40,13 +40,7 @@ c::set('languages', array(
     'default' => true,
     'locale'  => 'en_US',
     'url'     => '/',
-  ),
-  array(
-    'code'    => 'de',
-    'name'    => 'Deutsch',
-    'locale'  => 'de_DE',
-    'url'     => '/de',
-  ),
+  )
 ));
 
 /*
@@ -64,5 +58,4 @@ of the system, please check out http://getkirby.com/docs/advanced/options
 c::set('relativedate.fuzzy', false);
 c::set('relativedate.length', 1);
 c::set('markdown.extra', true);
-
 c::set('debug',true);

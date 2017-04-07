@@ -20,3 +20,6 @@ fields:
   text:
     label: Text
     type:  textarea
+  tags:
+    label: Tags
+    type:  tags

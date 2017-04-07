@@ -1082,6 +1082,7 @@ img {
 
 #trigger-info-modal {
   font-size: 18px;
+  margin-right: 5px;
 }
 
 /* Overlay style */
@@ -1619,14 +1620,12 @@ nav[role="navigation"] {
   margin-right: 20px;
   overflow: hidden;
   height: 50px;
-  font-size: 12px;
-  letter-spacing: 1px;
   /*border-top: 1px solid #1E1E1E;*/
 }
 
 .footer > a {
-  font-size: 12px;
-  letter-spacing: 1px;
+  font-size: 10px;
+  letter-spacing: 0.5px;
   text-decoration: none;   
 }
 
