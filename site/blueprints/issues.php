@@ -1,8 +1,8 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-title: Topics
+title: Issues
 pages:
-  template: category
+  template: article
 files: false
 fields:
   title:

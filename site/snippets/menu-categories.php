@@ -2,7 +2,7 @@
 <section id="browse-categories" class="hidden">
 	<div class="owl-carousel">
 		 
-		<?php foreach(page('topics')->children()->visible() as $category): ?>
+		<?php foreach(page('issues')->children()->visible() as $category): ?>
 
 			<div class="main_category">
 				<div class="overlay">

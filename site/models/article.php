@@ -5,7 +5,7 @@ class ArticlePage extends Page {
     return (parent::author()->empty())? false : kirby()->site()->users()->find(parent::author());
   }
 
-  public function topics() {
+  public function issues() {
     return kirby()->site()->index()->filterBy('template', 'home')->first();
   }
  

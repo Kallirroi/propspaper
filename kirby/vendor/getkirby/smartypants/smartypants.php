@@ -1028,7 +1028,7 @@ Version History
 Bugs
 ----
 
-To file bug reports or feature requests (other than topics listed in the
+To file bug reports or feature requests (other than issues listed in the
 Caveats section above) please send email to:
 
 <michel.fortin@michelf.com>

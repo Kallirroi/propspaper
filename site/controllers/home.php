@@ -3,7 +3,7 @@
 return function($site, $pages, $page) {
 
   // get all articles and add pagination
-  $articles = page('topics')->grandChildren()->visible();
+  $articles = page('issues')->grandChildren()->visible();
 
   // perform search
   if ($query = get('s')) {
