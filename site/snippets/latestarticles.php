@@ -48,20 +48,13 @@
 	
                
  			<div class="post-meta">
-				<ul>	 
-
-					<li class="author"> <?php echo (relativeDate($article->date('Y-m-d'))) ?> <?php echo l::get('by') ?>
-						
-						<?php if ($article->author()): ?>
-							<?php if ($article->author()->firstName() || $article->author()->lastName()): ?>
-							<strong><?php echo $article->author()->firstName() ?> <?php echo $article->author()->lastName() ?></strong>
-							<?php else: ?>
-							<?php echo $article->author()->username() ?>
-							<?php endif ?>
-						<?php endif ?>
-					</li>
-
-				</ul>
+				<?php if ($article->tags()): ?>
+					<?php foreach(str::split($article->tags()) as $tag): ?> 
+					    <a href="<?php echo url('issues/' . url::paramsToString(['tag' => $tag])) ?>">
+					      <?php echo html($tag) ?>
+					    </a>
+					<?php endforeach ?>
+				<?php endif ?>
 			</div> 
 			 
 		</footer>

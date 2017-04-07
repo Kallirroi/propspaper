@@ -13,6 +13,6 @@ return function($site, $pages, $page) {
 	}
 
 	// Return the list of projects and tags to template
-    return compact('articles', 'tags');
+    return compact('articles', 'tags', 'latestarticles');
 };
 ?>

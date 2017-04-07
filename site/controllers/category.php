@@ -14,7 +14,6 @@ return function($site, $pages, $page) {
     }
   }
  
- 
   // create a shortcut for pagination
   $categoryArticles = $categoryArticles->paginate(c::get('category.postPerPage', 15));
   $pagination = $categoryArticles->pagination();

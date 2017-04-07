@@ -25,15 +25,7 @@
 			<?php echo $page->text()->kirbytext() ?>
 
 			<div class="post-meta">
-
  				<div class="author"> 
-<!-- 					<?php if ($page->author()): ?>
-						<?php if ($page->author()->firstName() || $page->author()->lastName()): ?>
-						<strong><?php echo $page->author()->firstName() ?> <?php echo $page->author()->lastName() ?></strong>
-						<?php else: ?>
-						<?php echo $page->author()->username() ?>
-						<?php endif ?>
-					<?php endif ?> -->
 					<?php foreach(str::split($page->tags()) as $tag): ?> 
 					    <a href="<?php echo url('issues/' . url::paramsToString(['tag' => $tag])) ?>">
 					      <?php echo html($tag) ?>
