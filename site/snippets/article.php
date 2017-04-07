@@ -34,7 +34,7 @@
 						<?php echo $page->author()->username() ?>
 						<?php endif ?>
 					<?php endif ?> -->
-					<?php foreach($tags as $tag): ?>
+					<?php foreach(str::split($page->tags()) as $tag): ?> 
 					    <a href="<?php echo url('issues/' . url::paramsToString(['tag' => $tag])) ?>">
 					      <?php echo html($tag) ?>
 					    </a>
