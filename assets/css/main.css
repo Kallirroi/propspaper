@@ -2050,16 +2050,19 @@ nav[role="navigation"] {
     overflow: scroll;
   }  
   .post-wrapper .post-content {
-    width: 45%;
+    width: 50%;
     position: absolute;
     height: 100vh;
     top: 0px;
     padding-top: 70px;
     right: 0;
     padding-right: 120px;
+    padding-left: 30px;
     overflow: scroll;
     padding-bottom: 60px;
     background: #fff;
+/*    background: #000;
+    color: #fff;*/
     z-index: 1003;
   }
   .footer {
