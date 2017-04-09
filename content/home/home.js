@@ -1,6 +1,10 @@
-console.log('home');
-
 var query = window.location.href.split('s=').slice(1).toString();
 var terms = query.split('+');
-$('#searchTerms').text(terms.slice(0, -1));
-
+console.log(terms)
+if (terms.toString() === "") {
+	$('#searchTerms').hide();
+} 
+else {
+	$('#searchTerms').text("   for "+terms);
+	$('#searchTerms').show();
+}

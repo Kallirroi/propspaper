@@ -759,6 +759,16 @@ img {
   background: #7BEEC7;
 }
 
+#searchTerms {
+    position: absolute;
+    top: 48%;
+    left: 6%;
+    -webkit-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    color: #DCDED8;
+}
+
 .header .browse-link {
   display: none;
   position: absolute;

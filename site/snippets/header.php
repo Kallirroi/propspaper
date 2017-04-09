@@ -8,7 +8,7 @@
 		</a>
 	</div>
 
-	<div id="searchTerms" class="logo"></div>
+	<div id="searchTerms"></div>
 
 	<a href="#" id="open-close" class="browse-link">
 		<span class="icon-tag"></span>

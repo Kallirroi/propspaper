@@ -53,8 +53,8 @@ $(document).ready(function(){
 		}
 	}
 
-	triggerBttn.on( 'click', toggleOverlay );
-	closeBttn.on( 'click', toggleOverlay );
+	triggerBttn.addEventListener( 'click', toggleOverlay );
+	closeBttn.addEventListener( 'click', toggleOverlay );
 
 	});
 
