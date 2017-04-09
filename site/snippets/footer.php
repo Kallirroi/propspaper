@@ -7,5 +7,12 @@
 	<?php echo js("assets/js/isotope.js") ?>
 	<?php echo js("assets/js/modernizr.custom.js") ?>
   	<?php snippet('analytics') ?>
+
+	<!-- custom javascript -->
+	<?php foreach($page->files()->filterBy('extension', 'js') as $js): ?>
+	<?php echo js($js->url()) ?>
+	<?php endforeach ?>
+
+  
 </body>
 </html>

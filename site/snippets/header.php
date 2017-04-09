@@ -8,7 +8,7 @@
 		</a>
 	</div>
 
-
+	<div id="searchTerms" class="logo"></div>
 
 	<a href="#" id="open-close" class="browse-link">
 		<span class="icon-tag"></span>
@@ -24,8 +24,8 @@
 
 	
 	<form class="search-box">
-	<div class="btn-close"><span class="icon-close"></span></div>
-	<input class="search-bar" type="text" value="" placeholder="Search" data-active-placeholder="Search..." name="s">
+		<div class="btn-close"><span class="icon-close"></span></div>
+		<input class="search-bar" type="text" value="" placeholder="Search" data-active-placeholder="Search..." name="s">
 	</form>
 
 
