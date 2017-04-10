@@ -7,16 +7,16 @@
 		
 		<header>
 			<?php if($image = $article->images()->sortBy('sort', 'asc')->first()): ?>
-			<div class="post-image">
-				<a href="<?php echo $article->url() ?>">
-					<img class="lazy-loaded" 
-						data-src="<?php echo thumb($image, array('width' => 515))->url() ?>"  
-						data-hover="http://localhost:8888/props/thumbs/issues/issue-1/1/props_01_collection_collection_2-940x1356.jpg"  
-						src="<?php echo thumb($image, array('width' => 515))->url() ?>" 
-						alt="<?php echo html($article->title()) ?>"
-					/>
-				</a>
-			</div>
+				<div class="post-image">
+					<a href="<?php echo $article->url() ?>">
+						<img class="lazy-loaded" 
+							data-src="<?php echo thumb($image, array('width' => 515))->url() ?>"  
+							data-hover="<?php echo thumb($article->images()->sortBy('sort', 'asc')->flip()->first(), array('width' => 515))->url() ?>" 
+							src="<?php echo thumb($image, array('width' => 515))->url() ?>" 
+							alt="<?php echo html($article->title()) ?>"
+						/>
+					</a>
+				</div>
 			<?php endif ?>
 
 		</header>
