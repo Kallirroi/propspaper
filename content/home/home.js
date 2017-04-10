@@ -15,7 +15,6 @@ else {
 $('.post-item').on('mouseover', function(e) {
 	var hovered = e.target;
 	var hoveredNumber = $(hovered).attr('alt');
-	console.log($(hovered).attr('data-hover'))
 	$(hovered).attr('src', $(hovered).data('hover'));
 }).mouseout(function (e) {
 	var hovered = e.target;

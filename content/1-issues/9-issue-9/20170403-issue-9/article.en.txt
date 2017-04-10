@@ -12,6 +12,16 @@ Author: kallirroi
 
 Text: 
 
+PROPS:What is the role of images in your research?
+
+Prashast Thapan: During the Renaissance, paintings were windows to the world. Artists would spend hours staring at landscapes, using what they saw to create visual information with brushstrokes. Now, I feel like images have started to play the role of the landscape. Google image search, Shutterstock, and other resources have become reference material we can use to inform our work. Sites like Tumblr, Pinterest, and Instagram are reservoirs of such images that influence us daily. When making video games, images are translated from reservoirs of inspiration into something else entirely.
+Video games are inspired by real life. I can't build a world out of thin air—I need a point of reference to build something new. For my game Static Lagoon, I was focusing on the concept of alienation, or breaking the fourth wall. I was reading about the theatrical techniques of Bertolt Brecht, who was ideologically opposed to Aristotle's idea of immersive theatre. Instead of the Aristotelian method of letting the audience escape into the play's narrative, Brecht would employ techniques that would constantly remind the audience that they were watching a play, so they would observe it with critical distance. I wanted to use that idea in game design and make a video game that constantly said, "remember, you're playing a video game."
+
+The visual relationship between Static Lagoon and Dogville is evident—two worlds without walls containing a bare minimum of objects. But the experience of a film is observational, in a video game you're constantly making decisions that affect your experience. In Static Lagoon, the decisions you make urge you to re-examine your relationship to escapist activities - going to the mall, drinking alcohol, eating food, and even playing video games. The absence of walls (which in the film served as a reminder of the interconnectedness of the town) in the game allows you to anticipate what’s next.
+The beauty of translating images into video games is that games ask you to participate. Which means, by default, the image will cease to be an image if put into a game. It’s transformed into a waypoint, a world, or something else—that’s where the magic happens.
+
+Download Static Lagoon at <http://www.staticlagoon.net/>.
+
 ----
 
-Tags: demo and die and demo
+Tags: demo and die and demo,theatre,games,room,Bertolt Brecht,Prashast Thapan
