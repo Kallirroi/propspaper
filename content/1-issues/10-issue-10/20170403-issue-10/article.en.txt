@@ -14,4 +14,4 @@ Text:
 
 ----
 
-Tags: issue10
+Tags: light mobile

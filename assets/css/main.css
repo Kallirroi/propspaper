@@ -108,6 +108,7 @@ html {
 
 body {
   margin: 0;
+  cursor: crosshair;
 }
 
 article,
@@ -1039,8 +1040,8 @@ img {
 .active.search-box input[type=text] {
   box-shadow: none;
   border-radius: 0;
-  font-size: 24px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 12px;
   border: none;
   background-color: transparent;
   color: #9C9C98;
@@ -1049,7 +1050,7 @@ img {
   height: 30px;
   padding: 1em 0 0.5em 0;
   margin: 0;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
   -webkit-appearance: none;
 }
 
@@ -1177,7 +1178,7 @@ img {
 /*-------------------------------------------------*/
 /* =  9. post-features
 /*-------------------------------------------------*/
-post-container {
+.post-container {
   *zoom: 1;
   margin-left: -20px;
   margin-right: -20px;
