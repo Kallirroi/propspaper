@@ -18,7 +18,7 @@
 			<?php endforeach ?>
 		</div>
 
-		<div class="post-content">
+		<div class="post-content" >
 
 			<h1><?php echo $page->title()->html() ?></h1>
 			

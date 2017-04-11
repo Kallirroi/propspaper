@@ -373,7 +373,7 @@ ul {
 }
 
 h1, h2, h3, h4 {
-  margin: 40px 0;
+  /*margin: 40px 0;*/
 }
 
 h1 {
@@ -738,7 +738,7 @@ img {
 .header .logo {
   z-index: 999;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 0%;
   -webkit-transform: translate(0%, -50%);
       -ms-transform: translate(0%, -50%);
@@ -760,9 +760,21 @@ img {
   background: #7BEEC7;
 }
 
+.header .layout {
+  right: 0;
+  z-index: 999;
+  position: absolute;
+  top: 40%;
+}
+
+.header .layout:hover {
+  background: #7BEEC7;
+  cursor: pointer;
+}
+
 #searchTerms {
     position: absolute;
-    top: 48%;
+    top: 40%;
     left: 6%;
     -webkit-transform: translate(0%, -50%);
     -ms-transform: translate(0%, -50%);
@@ -852,12 +864,11 @@ img {
 .header .nav {
   z-index: 1000;
   position: absolute;
-  top: 50%;
-  right: 0%;
+  top: 55%;
+  left: 0%;
   -webkit-transform: translate(0%, -50%);
       -ms-transform: translate(0%, -50%);
           transform: translate(0%, -50%);
-  margin-top: 7px;
   display: block;
 }
 
@@ -888,8 +899,8 @@ img {
 .search-box {
   z-index: 1001;
   position: absolute;
-  top: 50%;
-  right: 0%;
+  top: 75%;
+  left: 0%;
   -webkit-transform: translate(0%, -50%);
       -ms-transform: translate(0%, -50%);
           transform: translate(0%, -50%);
@@ -903,9 +914,6 @@ img {
 
 .search-box input.search-bar {
   outline: none;
-  line-height: 30px;
-  margin-top: 12px;
-  background: url(../img/icons/search_text.svg) center no-repeat;
 }
 
 .search-box input.search-bar:hover {
@@ -1095,9 +1103,9 @@ img {
 /*-------------------------------------------------*/
 
 #trigger-info-modal {
-  font-size: 18px;
-  margin-right: 5px;
+  z-index: -1;
 }
+
 
 /* Overlay style */
 .info-modal {
@@ -1293,8 +1301,11 @@ img {
 }
 
 .post-container .post-item footer .post-meta {
-  margin-top: 25px;
   padding: 0 15px;
+  display: block;
+  position: absolute;
+  top: 95%;
+  /*background: #ff0;*/
 }
 
 .post-container .post-item footer .post-meta ul {
@@ -1329,7 +1340,7 @@ img {
 /* =  10. pagination
 /*-------------------------------------------------*/
 nav[role="navigation"] {
-  text-align: center;
+  text-align: left;
 }
 
 .pagination {
@@ -1942,7 +1953,7 @@ nav[role="navigation"] {
     width: 72px;
   }
   .header .nav {
-    margin-top: 10px;
+    /*margin-top: 10px;*/
   }
   .header .nav ul li {
     padding-right: 40px;
@@ -1970,14 +1981,14 @@ nav[role="navigation"] {
     /* ie */
   }
   .search-box input.search-bar {
-    line-height: 35px;
-    margin-top: 15px;
-    width: 38px;
-    height: 38px;
-    border: none;
+    /*border: 1px solid;*/
+    width: 50px;
+    display: block;
+    background: url('../img/search.svg') center no-repeat;
   }
   .search-box .btn-close {
     font-size: 30px;
+    font-weight: 500;
   }
   .search-box .help {
     font-size: 14px;
@@ -2035,10 +2046,10 @@ nav[role="navigation"] {
     margin: 60px auto;
   }
   .post-container .post-item {
-    width: calc(99.99% * 1/3 - 120px);
+    width: calc(49.99% * 1/2 - 120px);
     margin-left: 60px;
     margin-right: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
   }
   .post-container .post-item footer {
     padding: 0 20px;
@@ -2050,6 +2061,9 @@ nav[role="navigation"] {
   .post-container .post-item footer .post-meta {
     margin-top: 25px;
     padding: 0 20px;
+  }
+  ::-webkit-scrollbar {
+  display: none;
   }
   .post-wrapper .post-media {
     width: 45%;

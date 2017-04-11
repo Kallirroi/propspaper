@@ -21,6 +21,7 @@
 
   <?php echo css('@auto') ?>
   <?php echo css('assets/css/main.css') ?> 
+  <?php echo css('assets/js/jquery-ui/jquery-ui.css') ?> 
 
   <?php foreach($page->files()->filterBy('extension', 'css') as $css): ?>
   <?php echo css($css->url()) ?>
