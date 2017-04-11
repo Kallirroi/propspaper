@@ -255,7 +255,7 @@ html input[type="button"], input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
-  cursor: pointer;
+  cursor: url('../img/cursor.png'), auto;
   /* 3 */
 }
 
@@ -693,7 +693,7 @@ img {
 .main_category .title:hover h3 {
   color: #7BEEC7;
   padding: 0px;
-  cursor: pointer;
+  cursor: url('../img/cursor.png'), auto;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.5s;
@@ -758,12 +758,13 @@ img {
 }
 
 .header .randomLayout {
-  right: 8%;
+  right: 5%;
   z-index: 999;
   position: absolute;
   top: 80%;
   display: block;
-  cursor: pointer;
+  cursor: url('../img/cursor.png'), auto;
+  font-size: 14px;
 }
 .header .normalLayout {
   right: 0%;
@@ -771,14 +772,17 @@ img {
   position: absolute;
   top: 80%;
   display: block;
-  cursor: pointer;
+  cursor: url('../img/cursor.png'), auto;
+  font-size: 14px;
 }
 
 .header .normalLayout:hover {
   background: #7BEEC7;
+  cursor: pointer;
 }
 .header .randomLayout:hover {
   background: #7BEEC7;
+  cursor: pointer;
 }
 
 #searchTerms {
@@ -873,7 +877,7 @@ img {
 .header .nav {
   z-index: 1000;
   position: absolute;
-  top: 42%;
+  top: 43%;
   left: 0%;
   -webkit-transform: translate(0%, -50%);
       -ms-transform: translate(0%, -50%);
@@ -927,7 +931,7 @@ img {
 }
 
 .search-box input.search-bar:hover {
-  cursor: pointer;
+  cursor: url('../img/cursor.png'), auto;
 }
 
 .search-box .btn-close {
@@ -939,7 +943,7 @@ img {
       -ms-transform: translate(0%, -50%);
           transform: translate(0%, -50%);
   display: none;
-  cursor: pointer;
+  cursor: url('../img/cursor.png'), auto;
   color: #1E1E1E;
   font-size: 20px;
   margin-top: 5px;
@@ -1130,7 +1134,7 @@ img {
   font-size: 30px;
   position: relative;
   z-index: 2000;
-  cursor: pointer;
+  cursor: url('../img/cursor.png'), auto;
 }
 
 .info-modal-content {
@@ -1233,8 +1237,9 @@ img {
   display: block;
 }
 
-.post-container .post-item header > a {
+.post-container .post-item header .post-image > a {
   display: block;
+  cursor:  url('../img/cursor.png'), auto;
 }
 
 .post-container .post-item header > a .post-overlay {
@@ -1582,7 +1587,7 @@ nav[role="navigation"] {
   color: #1E1E1E;
   font-size: 16px;
   line-height: 40px;
-  cursor: pointer;
+  cursor: url('../img/cursor.png'), auto;
   float: right;
 }
 
@@ -1990,9 +1995,13 @@ nav[role="navigation"] {
     display: block;
     background: url('../img/search.svg') center no-repeat;
   }
+   .search-box input.search-bar:hover {
+    cursor: text;
+   }
   .search-box .btn-close {
     font-size: 15px;
     font-weight: 500;
+    cursor: pointer;
   }
   .search-box .help {
     font-size: 14px;
