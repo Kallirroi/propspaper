@@ -5,8 +5,8 @@ $( function() {
 
 	var query = window.location.href.split('s=').slice(1).toString();
 	// var terms = query.split('+');
-	var terms = query;
-	console.log(terms);
+	var terms = query.slice(0, -1);
+	console.log(query, terms.toString());
 
 	if (terms.toString() === "") {
 		$('#searchTerms').hide();

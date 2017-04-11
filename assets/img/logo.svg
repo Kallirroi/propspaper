@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="104px" height="27px" viewBox="0 0 104 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
-    <title>PROPS</title>
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>logo</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-size="36" font-family="DINAlternate-Bold, DIN Alternate" font-weight="bold">
-        <text id="PROPS" fill="#000">
-            <tspan x="-2" y="26">PROPS</tspan>
-        </text>
+        <g id="logo" transform="translate(-2.000000, -8.000000)" fill="#000000">
+            <g id="PROPS">
+                <g id="Page-1">
+                    <text id="PROPS">
+                        <tspan x="0" y="34">PROPS</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
     </g>
 </svg>

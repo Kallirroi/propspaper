@@ -6,12 +6,12 @@
 		<a href="<?php echo url() ?>">
 			<img src="<?php echo url('assets/img/logo.svg') ?>" width="auto" height="auto" alt="<?php echo $site->title()->html() ?>" />
 		</a>
-	</div>
+	</div>	
 	<div id="searchTerms"></div>
 	<nav class="nav">
 		<ul>
 			<li><a href="#" id="trigger-info-modal">
-				<img src="<?php echo url('assets/img/info.svg') ?>" alt="<?php echo $site->title()->html() ?>" />
+				<img src="<?php echo url('assets/img/info.svg') ?>"  alt="<?php echo $site->title()->html() ?>" />
 				</a>
 			</li> 
 		</ul>
@@ -19,7 +19,7 @@
 
 	<form class="search-box">
 		<div class="btn-close"><span class="icon-close"></span></div>
-		<input class="search-bar" type="text" value="" placeholder="Search" data-active-placeholder="Search..." name="s">
+		<input class="search-bar" type="text" value="" placeholder="Search" data-active-placeholder="   " name="s">
 	</form>
 
 	<div class="randomLayout" id="randomLayout">
