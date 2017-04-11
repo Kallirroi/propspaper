@@ -1,4 +1,5 @@
 <footer class="footer">
+Copyright 2017 | made by <a href="http://kalli.website/">Kalli</a>
 </footer>
 	<?php echo js("assets/js/jquery.min.js") ?>
 	<?php echo js("assets/js/main.js") ?>

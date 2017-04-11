@@ -1,6 +1,7 @@
 $( function() {
     $("#draggable" ).draggable();
-
+    $('.nav').show();
+	$('.search-box').show();
 
 	var query = window.location.href.split('s=').slice(1).toString();
 	// var terms = query.split('+');
@@ -11,7 +12,7 @@ $( function() {
 		$('#searchTerms').hide();
 	} 
 	else {
-		$('#searchTerms').text("search for "+terms);
+		$('#searchTerms').text(" for "+terms);
 		$('#searchTerms').show();
 	}
 
@@ -28,10 +29,18 @@ $( function() {
 	$('#randomLayout').on('click', function(){
 		var children = $('.post-container').children();
 		for (var i = children.length - 1; i >= 0; i--) {
-			children[i].style.transform =  "skewX("+(Math.cos(i)) * 20+"deg)";
-			// children[i].style.width = "calc(99.99% * 1/10 - 50px)";
+			children[i].style.transform = "translate("+ (-10*i)+"px, "+(-40*i)+"px)";
+		// 	children[i].style.transform =  "skewX("+(Math.cos(i)) * 20+"deg)";
 		}
 
+	});
+
+	$('#normalLayout').on('click', function(){ 
+		var children = $('.post-container').children();
+		for (var i = children.length - 1; i >= 0; i--) {
+			children[i].style.transform = "translate(0,0)";
+		// 	children[i].style.transform =  "skewX("+(Math.cos(i)) * 20+"deg)";
+		}		
 	})
 
   } );

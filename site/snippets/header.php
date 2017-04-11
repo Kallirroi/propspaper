@@ -22,8 +22,11 @@
 		<input class="search-bar" type="text" value="" placeholder="Search" data-active-placeholder="Search..." name="s">
 	</form>
 
-	<div class="layout" id="randomLayout">
-		layout
+	<div class="randomLayout" id="randomLayout">
+		random
+	</div>	
+	<div class="normalLayout" id="normalLayout">
+		normal
 	</div>
 
 
