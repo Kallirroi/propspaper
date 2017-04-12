@@ -1330,14 +1330,13 @@ img {
 
 .post-container .post-item footer .post-meta ul li {
   color: #000;
-  opacity: 0.8;
+  opacity: 0.6;
   text-transform: uppercase;
 }
 
 .post-container .post-item footer .post-meta ul li a {
   text-decoration: none;
-  font-size: 12px;
-  line-height: 12px;
+  font-size: 24px;
 }
 
 .post-container .post-item footer .post-meta ul li a:hover {
@@ -1995,7 +1994,7 @@ nav[role="navigation"] {
     /*border: 1px solid;*/
     width: 50px;
     display: block;
-    background: url('../img/search.svg') center no-repeat;
+    background: url("../img/SEARCH.svg") center no-repeat;
   }
    .search-box input.search-bar:hover {
     cursor: text;

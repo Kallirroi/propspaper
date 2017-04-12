@@ -11,7 +11,7 @@
 	<nav class="nav">
 		<ul>
 			<li><a href="#" id="trigger-info-modal">
-				<img src="<?php echo url('assets/img/info.svg') ?>"  alt="<?php echo $site->title()->html() ?>" />
+				<img src="<?php echo url('assets/img/INFO.svg') ?>"  alt="info" />
 				</a>
 			</li> 
 		</ul>
@@ -24,10 +24,10 @@
 
 	<div>
 		<div class="tagView" id="tagView">
-			tags
+			TAGS
 		</div>	
 		<div class="imageView" id="imageView">
-			images
+			IMAGES
 		</div>
 	</div>
 
