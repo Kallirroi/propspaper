@@ -54,10 +54,10 @@ $( function() {
 		var children = $('.post-container').children();
 		for (var i = children.length - 1; i >= 0; i--) {
 			if (i > 7) {
-				children[i].style.transform = "translate("+ (-10 * i)+"px, "+(-20*i)+"px) skewX("+(Math.sin(e.pageY/500)) * 20+"deg)";
+				children[i].style.transform = "translate("+ (-10 * i)+"px, "+(-20*i)+"px) skewX("+(Math.sin(e.pageY/(100 * i))) * 20+"deg)";
 			}
 			else {
-				children[i].style.transform = "translate("+ (0)+"px, "+(0)+"px) skewX("+(Math.cos(e.pageX/500)) * 10+"deg)";
+				children[i].style.transform = "translate("+ (0)+"px, "+(0)+"px) skewX("+(Math.sin(-e.pageX/(100 * (i+1)))) * 20 +"deg)";
 			}
 		}
 	}
