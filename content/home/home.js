@@ -30,7 +30,7 @@ $( function() {
 		$('.post-image').css('display', 'block');
 		$('.post-meta').css('display', 'none');
 		// $('footer h3').css('display', 'none');
-		$('.imageView').css('font-weight', '500');
+		$('.imageView').css('font-weight', '600');
 		$('.tagView').css('font-weight', '400');
 
 		var children = $('.post-container').children();
@@ -47,17 +47,17 @@ $( function() {
 		$('.post-meta').css('display', 'inline-block');
 		$('footer h3').css('display', 'block');
 		$('.imageView').css('font-weight', '400');
-		$('.tagView').css('font-weight', '500');
+		$('.tagView').css('font-weight', '600');
 	});
 
 	function skewTags(e) {
 		var children = $('.post-container').children();
 		for (var i = children.length - 1; i >= 0; i--) {
-			if (i > children.length/2) {
-				children[i].style.transform = "translate("+ (-10 * i)+"px, "+(-20*i)+"px) skewX("+(Math.sin(e.pageY/800)) * 20+"deg)";
+			if (i > 7) {
+				children[i].style.transform = "translate("+ (-10 * i)+"px, "+(-20*i)+"px) skewX("+(Math.sin(e.pageY/500)) * 20+"deg)";
 			}
 			else {
-				children[i].style.transform = "translate("+ (0)+"px, "+(0)+"px) skewX("+(Math.sin(e.pageX/800)) * 20+"deg)";
+				children[i].style.transform = "translate("+ (0)+"px, "+(0)+"px) skewX("+(Math.cos(e.pageX/500)) * 10+"deg)";
 			}
 		}
 	}
