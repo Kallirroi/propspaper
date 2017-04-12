@@ -24,10 +24,10 @@
 
 	<div>
 		<div class="tagView" id="tagView">
-			tag view
+			tags
 		</div>	
 		<div class="imageView" id="imageView">
-			image view
+			images
 		</div>
 	</div>
 

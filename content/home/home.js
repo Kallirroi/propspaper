@@ -43,7 +43,7 @@ $( function() {
 	$('#imageView').on('click', function(){ 
 		$('.post-image').css('display', 'block');
 		$('.post-meta').css('display', 'none');
-		$('footer h3').css('display', 'none');
+		// $('footer h3').css('display', 'none');
 		$('.imageView').css('font-weight', '500');
 		$('.tagView').css('font-weight', '400');
 		// var children = $('.post-container').children();
