@@ -1331,6 +1331,7 @@ img {
 .post-container .post-item footer .post-meta ul li {
   color: #000;
   opacity: 0.8;
+  text-transform: uppercase;
 }
 
 .post-container .post-item footer .post-meta ul li a {
