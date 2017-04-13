@@ -5,7 +5,7 @@ $( function() {
 
 	var query = window.location.href.split('s=').slice(1).toString();
 	// var terms = query.split('+');
-	var terms = query.slice(0, -1);
+	var terms = query.slice(-1) === "#" ? query.slice(0, -1) : query;
 	console.log(query, terms.toString());
 
 	if (terms.toString() === "") {

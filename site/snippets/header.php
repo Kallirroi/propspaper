@@ -23,12 +23,12 @@
 	</form>
 
 	<div>
-		<div class="tagView" id="tagView">
-			TAGS
-		</div>	
 		<div class="imageView" id="imageView">
 			IMAGES
 		</div>
+		<div class="tagView" id="tagView">
+			TAGS
+		</div>			
 	</div>
 
 
