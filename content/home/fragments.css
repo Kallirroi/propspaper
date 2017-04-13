@@ -6,6 +6,7 @@
 	min-height: 550px;*/
 	position: relative;
 	margin: 0 0 0 0;
+	display: none;
 }
 
 .fragment-wrap--right {

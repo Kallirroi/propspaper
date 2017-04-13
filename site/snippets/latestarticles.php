@@ -1,6 +1,5 @@
 <!-- Latest articles -->
 <section class="post-container">
-
 	<?php foreach($articles as $article): ?>
 		<article class="post-item grid-sizer">	
 			<header>
@@ -8,7 +7,7 @@
 					<div class="post-image" >
 						<section class="section section--flow">
 								<div class="content">
-									<div id="frag-2" class="fragment-wrap" style="background-image: url(<?php echo thumb($image, array('width' => 515))->url() ?>)">
+									<div id="<?php echo html($article->title()) ?>" class="fragment-wrap" style="background-image: url(<?php echo thumb($image, array('width' => 515))->url() ?>)">
 										<a href="<?php echo $article->url() ?>">
 										<img class="lazy-loaded" 
 											data-src="<?php echo thumb($image, array('width' => 515))->url() ?>"  
@@ -20,7 +19,7 @@
 									</div>
 								</div>
 								<a href="<?php echo $article->url() ?>">
-									<img id="mainPageImages" class="lazy-loaded" 
+									<img id="mainPageImages<?php echo html($article->title()) ?>" class="lazy-loaded" 
 									data-src="<?php echo thumb($image, array('width' => 515))->url() ?>"  
 									data-hover="<?php echo thumb($article->images()->sortBy('sort', 'asc')->flip()->first(), array('width' => 515))->url() ?>" 
 									src="<?php echo thumb($image, array('width' => 515))->url() ?>" 
@@ -50,6 +49,8 @@
 				</div> 
 				 
 			</footer>
+
 		</article>
+
 	<?php endforeach ?>
 </section>

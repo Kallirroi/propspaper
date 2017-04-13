@@ -1,3 +1,5 @@
+
+
 	<?php echo js("assets/js/jquery.min.js") ?>
 	<?php echo js("assets/js/main.js") ?>
 	<?php echo js("assets/js/jquery-ui/jquery-ui.js") ?>
@@ -7,11 +9,10 @@
 	<?php echo js("assets/js/modernizr.custom.js") ?>
   	<?php snippet('analytics') ?>
 
-	<!-- custom javascript -->
+  	<!-- custom javascript -->
 	<?php foreach($page->files()->filterBy('extension', 'js') as $js): ?>
 	<?php echo js($js->url()) ?>
 	<?php endforeach ?>
-
-  
+	
 </body>
 </html>
