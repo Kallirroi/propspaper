@@ -7,7 +7,7 @@
 					<div class="post-image" >
 						<section class="section section--flow">
 								<div class="content">
-									<div id="<?php echo html($article->title()) ?>" class="fragment-wrap" style="background-image: url(<?php echo thumb($image, array('width' => 515))->url() ?>)">
+									<div id="searchPageImages<?php echo html($article->title()) ?>" class="fragment-wrap" style="background-image: url(<?php echo thumb($image, array('width' => 515))->url() ?>)">
 										<a href="<?php echo $article->url() ?>">
 										<img class="lazy-loaded" 
 											data-src="<?php echo thumb($image, array('width' => 515))->url() ?>"  

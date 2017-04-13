@@ -7,22 +7,26 @@ $( document ).ready(function() {
 	// var terms = query.split('+');
 	var terms = query.slice(-1) === "#" ? query.slice(0, -1) : query;
 	console.log(query, terms.toString());
-	var visiblePostsID = $('.post-image').children().find('img').map(function(index,dom){return dom.id!=="" ? dom.id : null;});
 
-	if (terms.toString() === "") { //no search
+	var mainPageImagesID = $('.post-image').children().find('img').map(function(index,dom){return dom.id!=="" ? dom.id : null;});
+	console.log(mainPageImagesID)
+
+	if (terms.toString() === "") { //main page
 		$('#searchTerms').hide();
 		$('.fragment-wrap').hide();
-		for (var i = visiblePostsID.length - 1; i >= 0; i--) {
-			$('#'+visiblePostsID[i]).show();
+		for (var i = mainPageImagesID.length - 1; i >= 0; i--) {
+			$('#'+mainPageImagesID[i]).show();
 		}
 	} 
-	else {
+	else { //search page
 		$('#searchTerms').text(" for "+terms);
 		$('#searchTerms').show();
-		$('.fragment-wrap').show();
-		for (var i = visiblePostsID.length - 1; i >= 0; i--) {
-			$('#'+visiblePostsID[i]).hide();
+
+		for (var i = mainPageImagesID.length - 1; i >= 0; i--) {
+			$('#'+mainPageImagesID[i]).hide();
 		}
+		$('.fragment-wrap').show();
+
 	}
 
 	$('.post-item').on('mouseover', function(e) {
@@ -73,8 +77,9 @@ $( document ).ready(function() {
 		imagesLoaded(document.querySelectorAll('.fragment-wrap'), { background: true }, function() {
 			document.body.classList.remove('loading');
 
-			for (var i = visiblePostsID.length - 1; i >= 0; i--) {
-				new FragmentsFx(document.getElementById(visiblePostsID[i]), {
+			for (var i = mainPageImagesID.length - 1; i >= 0; i--) {
+				var index = mainPageImagesID[i].slice(-2);
+				new FragmentsFx(document.getElementById('searchPageImages'+index), {
 					fragments: 10,
 					boundaries: {x1: 50, x2: 150, y1: 0, y2: 0},
 					randomIntervals: {
