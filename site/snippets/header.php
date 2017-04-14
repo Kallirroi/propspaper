@@ -6,23 +6,16 @@
 		<a href="<?php echo url() ?>">PROPS</a>
 		<a href="#" id="trigger-info-modal"> INFO </a>
 		<a href="#">INDEX</a>
+		<a class="imageView" id="imageView"> IMAGES </a>
+		<a  class="tagView" id="tagView"> TAGS </a>	
 		<form class="nav-alt-search"> 
 			<input class="search-bar" type="text" value="" placeholder="Search..." data-active-placeholder="" name="s">
-		</form>
-
+		</form>		
 	</nav>
-	
-		<span id="searchTerms"></span>
-	<div>
-		<div class="imageView" id="imageView">
-			IMAGES
-		</div>
-		<div class="tagView" id="tagView">
-			TAGS
-		</div>			
-	</div>
+
+	<div id="searchTerms"></div>
+
 
 </header>
-
 
 <?php snippet('about') ?>

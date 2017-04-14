@@ -7,7 +7,7 @@ $(document).ready(function(){
 	/* =  search
 	/*-------------------------------------------------*/
   
-    $(".search-box").first().expandSearch();
+    $(".nav-alt-search").first().expandSearch();
 
 
     	

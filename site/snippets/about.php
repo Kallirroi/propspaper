@@ -6,7 +6,6 @@
 
 
 ?>
-
 <section class="info-modal info-modal-scale">
 	<div class="info-modal-content">
 		<a class="info-modal-close"><span class="icon-close"></span></a>
