@@ -6,10 +6,10 @@ $( document ).ready(function() {
 	var query = window.location.href.split('s=').slice(1).toString();
 	// var terms = query.split('+');
 	var terms = query.slice(-1) === "#" ? query.slice(0, -1) : query;
-	console.log(query, terms.toString());
+	// console.log(query, terms.toString());
 
 	var mainPageImagesID = $('.post-image').children().find('img').map(function(index,dom){return dom.id!=="" ? dom.id : null;});
-	console.log(mainPageImagesID)
+	// console.log(mainPageImagesID)
 
 	if (terms.toString() === "") { //main page
 		$('#searchTerms').hide();
