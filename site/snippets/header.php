@@ -5,7 +5,7 @@
 	<nav class="nav-alt">
 		<a href="<?php echo url() ?>">PROPS</a>
 		<a href="#" id="trigger-info-modal"> INFO </a>
-		<a href="#" id="index">INDEX</a>
+		<a href="#" id="indexButton">INDEX</a>
 		<a class="imageView" id="imageView"> IMAGE VIEW </a>
 		<a class="tagView" id="tagView"> TAG VIEW </a>	
 		<form class="nav-alt-search"> 

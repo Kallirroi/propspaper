@@ -71,4 +71,11 @@ $( document ).ready(function() {
     })();
 
 
+    $('#indexButton').on('click', function(){
+		$('html, body').animate({
+        	scrollTop: $("#indexSection").offset().top
+   		}, 200);
+    })
+
+
   });
