@@ -20,7 +20,6 @@ $( document ).ready(function() {
 	else { //search page
 		$('#searchTerms').text(" for "+terms);
 		$('#searchTerms').css('opacity', 1);
-
 		for (var i = mainPageImagesID.length - 1; i >= 0; i--) {
 			$('#'+mainPageImagesID[i]).hide();
 		}
@@ -95,5 +94,17 @@ $( document ).ready(function() {
 			}
 		});
 	})();
+
+    (function() {
+        var path = '//easy.myfonts.net/v2/js?sid=270903(font-family=Neue+Haas+Unica+Pro+Bold)&sid=270910(font-family=Neue+Haas+Unica+Pro+Medium)&sid=270912(font-family=Neue+Haas+Unica+Pro)&sid=270916(font-family=Neue+Haas+Unica+Pro+Ultra+Light)&key=6BGuzqFAWW',
+            protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
+            trial = document.createElement('script');
+        trial.type = 'text/javascript';
+        trial.async = true;
+        trial.src = protocol + path;
+        var head = document.getElementsByTagName("head")[0];
+        head.appendChild(trial);
+    })();
+
 
   });

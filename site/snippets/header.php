@@ -5,9 +5,9 @@
 	<nav class="nav-alt">
 		<a href="<?php echo url() ?>">PROPS</a>
 		<a href="#" id="trigger-info-modal"> INFO </a>
-		<a href="#">INDEX</a>
-		<a class="imageView" id="imageView"> IMAGES </a>
-		<a  class="tagView" id="tagView"> TAGS </a>	
+		<a href="#" id="index">INDEX</a>
+		<a class="imageView" id="imageView"> IMAGE VIEW </a>
+		<a class="tagView" id="tagView"> TAG VIEW </a>	
 		<form class="nav-alt-search"> 
 			<input class="search-bar" type="text" value="" placeholder="Search..." data-active-placeholder="" name="s">
 		</form>		
