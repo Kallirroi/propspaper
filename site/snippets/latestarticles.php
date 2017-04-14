@@ -4,29 +4,15 @@
 		<article class="post-item grid-sizer">	
 			<header>
 				<?php if($image = $article->images()->sortBy('sort', 'asc')->first()): ?>
-					<div class="post-image" >
-						<section class="section section--flow">
-								<div class="content">
-									<div id="searchPageImages<?php echo html($article->title()) ?>" class="fragment-wrap" style="background-image: url(<?php echo thumb($image, array('width' => 515))->url() ?>)">
-										<a href="<?php echo $article->url() ?>">
-										<img class="lazy-loaded" 
-											data-src="<?php echo thumb($image, array('width' => 515))->url() ?>"  
-											data-hover="<?php echo thumb($article->images()->sortBy('sort', 'asc')->flip()->first(), array('width' => 515))->url() ?>" 
-											src="<?php echo thumb($image, array('width' => 515))->url() ?>" 
-											alt="<?php echo html($article->title()) ?>"
-										/>
-										</a>
-									</div>
-								</div>
-								<a href="<?php echo $article->url() ?>">
-									<img id="mainPageImages<?php echo html($article->title()) ?>" class="lazy-loaded" 
-									data-src="<?php echo thumb($image, array('width' => 515))->url() ?>"  
-									data-hover="<?php echo thumb($article->images()->sortBy('sort', 'asc')->flip()->first(), array('width' => 515))->url() ?>" 
-									src="<?php echo thumb($image, array('width' => 515))->url() ?>" 
-									alt="<?php echo html($article->title()) ?>"
-										/>
-								</a>
-						</section>
+					<div class="post-image" >								
+						<a href="<?php echo $article->url() ?>">
+							<img id="mainPageImages<?php echo html($article->title()) ?>" class="lazy-loaded" 
+							data-src="<?php echo thumb($image, array('width' => 515))->url() ?>"  
+							data-hover="<?php echo thumb($article->images()->sortBy('sort', 'asc')->flip()->first(), array('width' => 515))->url() ?>" 
+							src="<?php echo thumb($image, array('width' => 515))->url() ?>" 
+							alt="<?php echo html($article->title()) ?>"
+								/>
+						</a>
 					</div>
 				<?php endif ?>
 			</header>

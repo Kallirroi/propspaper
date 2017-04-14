@@ -1,30 +1,18 @@
 $( document ).ready(function() {
     $("#draggable" ).draggable();
-	$('.tagView').css('text-decoration', 'line-through');
+	$('.tagView').css('opacity', '0.5');
 
 	var query = window.location.href.split('s=').slice(1).toString();
 	// var terms = query.split('+');
 	var terms = query.slice(-1) === "#" ? query.slice(0, -1) : query;
 	// console.log(query, terms.toString());
 
-	var mainPageImagesID = $('.post-image').children().find('img').map(function(index,dom){return dom.id!=="" ? dom.id : null;});
-	// console.log(mainPageImagesID)
-
 	if (terms.toString() === "") { //main page
 		$('#searchTerms').css('opacity', 0);
-		$('.fragment-wrap').hide();
-		for (var i = mainPageImagesID.length - 1; i >= 0; i--) {
-			$('#'+mainPageImagesID[i]).show();
-		}
 	} 
 	else { //search page
-		$('#searchTerms').text(" for "+terms);
+		$('#searchTerms').text(" "+terms);
 		$('#searchTerms').css('opacity', 1);
-		for (var i = mainPageImagesID.length - 1; i >= 0; i--) {
-			$('#'+mainPageImagesID[i]).hide();
-		}
-		$('.fragment-wrap').show();
-
 	}
 
 	$('.post-item').on('mouseover', function(e) {
@@ -40,8 +28,8 @@ $( document ).ready(function() {
 		$('.post-image').css('display', 'block');
 		$('.post-meta').css('display', 'none');
 		// $('footer h3').css('display', 'none');
-		$('.imageView').css('text-decoration', 'none');
-		$('.tagView').css('text-decoration', 'line-through');
+		$('.imageView').css('opacity', '1');
+		$('.tagView').css('opacity', '0.5');
 
 		var children = $('.post-container').children();
 		for (var i = children.length - 1; i >= 0; i--) {
@@ -55,8 +43,8 @@ $( document ).ready(function() {
 		$('.post-image').css('display', 'none');
 		$('.post-meta').css('display', 'inline-block');
 		$('footer h3').css('display', 'block');
-		$('.imageView').css('text-decoration', 'line-through');
-		$('.tagView').css('text-decoration', 'none');
+		$('.imageView').css('opacity', '0.5');
+		$('.tagView').css('opacity', '1');
 	});
 
 	function skewTags(e) {
@@ -70,30 +58,6 @@ $( document ).ready(function() {
 			}
 		}
 	}
-
-	(function() {
-		imagesLoaded(document.querySelectorAll('.fragment-wrap'), { background: true }, function() {
-			document.body.classList.remove('loading');
-
-			for (var i = mainPageImagesID.length - 1; i >= 0; i--) {
-				var index = mainPageImagesID[i].slice(-2);
-				new FragmentsFx(document.getElementById('searchPageImages'+index), {
-					fragments: 10,
-					boundaries: {x1: 50, x2: 150, y1: 0, y2: 0},
-					randomIntervals: {
-						top: {min: 0,max: 40},
-						left: {min: 0,max: 90},
-						dimension: {
-							width: {min: 10,max: 150, fixedHeight: 0.5},
-							height: {min: 5,max: 110, fixedWidth: 5}
-						}
-					},
-					parallax: true,
-					randomParallax: {min: 10, max: 300}
-				});
-			}
-		});
-	})();
 
     (function() {
         var path = '//easy.myfonts.net/v2/js?sid=270903(font-family=Neue+Haas+Unica+Pro+Bold)&sid=270910(font-family=Neue+Haas+Unica+Pro+Medium)&sid=270912(font-family=Neue+Haas+Unica+Pro)&sid=270916(font-family=Neue+Haas+Unica+Pro+Ultra+Light)&key=6BGuzqFAWW',
