@@ -25,6 +25,7 @@ $( document ).ready(function() {
 	});
 
 	$('#imageView').on('click', function(){ 
+		$('#columnSection').show();
 		$('.post-image').css('display', 'block');
 		$('.post-meta').css('display', 'none');
 		// $('footer h3').css('display', 'none');
@@ -40,6 +41,7 @@ $( document ).ready(function() {
 
 	$('#tagView').on('click', function(e){
 		document.addEventListener('mousemove', skewTags, false);
+		$('#columnSection').hide();
 		$('.post-image').css('display', 'none');
 		$('.post-meta').css('display', 'inline-block');
 		$('footer h3').css('display', 'block');
@@ -50,12 +52,7 @@ $( document ).ready(function() {
 	function skewTags(e) {
 		var children = $('.post-container').children();
 		for (var i = children.length - 1; i >= 0; i--) {
-			if (i > 7) {
-				children[i].style.transform = "translate("+ (-10 * i)+"px, "+(-20*i)+"px) skewX("+(Math.sin(e.pageY/(100 * i))) * 20+"deg)";
-			}
-			else {
-				children[i].style.transform = "translate("+ (0)+"px, "+(0)+"px) skewX("+(Math.sin(-e.pageX/(100 * (i+1)))) * 20 +"deg)";
-			}
+			children[i].style.transform = "translate("+ (-2 * i)+"px, "+(-2*i)+"px) skewX("+(Math.sin(e.pageY/(100 * i))) * 30+"deg)";
 		}
 	}
 
