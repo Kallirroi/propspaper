@@ -1,6 +1,26 @@
-/*body {
-  color: #fff;
-  background: #000;
+#columnSection {
+    height: auto;
+    background: #ff0;
+    overflow: visible;
 }
 
-*/
+#columnSection.post-container .post-item {
+    width: calc(99.99% * 1/2 - 120px);
+    margin-left: 60px;
+    margin-right: 60px;
+    /*border: 1px solid;*/
+}
+
+#indexSection {
+    height: auto;
+    color: #fff;
+    overflow: visible;
+    background: #000;
+}
+ #indexSection.post-container .post-item {
+    width: calc(19.99% * 1/1 - 120px);
+    margin-left: 60px;
+    margin-right: 60px;
+    /*border: 1px solid;*/
+ }
+
