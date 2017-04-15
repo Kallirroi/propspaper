@@ -561,7 +561,8 @@ img {
   position: relative;
   margin: 20px;
   overflow: hidden;
-  height: 120px;
+  height: auto;
+  padding-bottom: 30px;
   /*border: 1px solid #1E1E1E;*/
 }
 
@@ -852,124 +853,6 @@ form.nav-alt-search {
   color: #7BEEC7;
 }
 
-
-/*-------------------------------------------------*/
-/* =  10. pagination
-/*-------------------------------------------------*/
-nav[role="navigation"] {
-  text-align: left;
-}
-
-.pagination {
-  padding: 60px 20px;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.pagination li {
-  margin: 0 20px;
-  display: none;
-}
-
-.pagination li a {
-  display: inline-block;
-  text-decoration: none;
-  color: #9e9e9e;
-  font-size: 72px;
-  line-height: 72px;
-  font-weight: 700;
-}
-
-.pagination li a:hover {
-  color: #7BEEC7;
-}
-
-.pagination li a.current {
-  color: #1E1E1E;
-  pointer-events: none;
-}
-
-.pagination li:nth-last-child(2) a span {
-  display: none;
-}
-
-.pagination li:last-child a.current span {
-  display: none;
-}
-
-.pagination li.button {
-  display: inline-block;
-  margin: 0 20px;
-}
-
-.pagination li.button a.next,
-.pagination li.button a.prev {
-  font-weight: 400;
-  font-size: 18px;
-  text-transform: uppercase;
-  color: #1E1E1E;
-  letter-spacing: 1px;
-  position: relative;
-}
-
-.pagination li.button a.next:hover,
-.pagination li.button a.prev:hover {
-  color: #1E1E1E;
-}
-
-.pagination li.button a.next:hover:after,
-.pagination li.button a.prev:hover:after {
-  background: #7beec7;
-  -webkit-transition-property: background;
-  transition-property: background;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-}
-
-.pagination li.button a.next:after,
-.pagination li.button a.prev:after {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  height: 50%;
-  width: 100%;
-  background: rgba(123, 238, 199, 0.4);
-  pointer-events: none;
-  -webkit-transition-property: background;
-  transition-property: background;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-}
-
-.pagination li.button a.next:focus,
-.pagination li.button a.prev:focus {
-  box-shadow: none;
-}
-
-.pagination li.button.disabled {
-  opacity: 0.2;
-}
-
-.pagination.space-buttons li.button {
-  margin: 0;
-}
-
-.pagination.space-buttons:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.pagination.space-buttons .button:first-of-type {
-  float: left;
-}
-
-.pagination.space-buttons .button:last-of-type {
-  float: right;
-}
 
 /*-------------------------------------------------*/
 /* =  12. post-items
@@ -1402,10 +1285,6 @@ nav[role="navigation"] {
     top: 40%;
     left: 0%;
     width: 100%;
-  }
-
-  ::-webkit-scrollbar {
-    display: none;
   }
 
   .post-wrapper .post-media {
