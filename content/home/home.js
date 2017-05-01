@@ -74,5 +74,13 @@ $( document ).ready(function() {
    		}, 200);
     })
 
+	$('img')
+		.wrap('<span style="display:inline-block"></span>')
+		.css('display', 'block')
+		.parent()
+		.zoom({
+			url: 'http://media.cargocollective.com/1/3/96924/headerimg/dot100.jpg'
+	});
+
 
   });

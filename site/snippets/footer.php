@@ -7,6 +7,7 @@
 	<?php echo js("assets/js/classie.js") ?>
 	<?php echo js("assets/js/isotope.js") ?>
 	<?php echo js("assets/js/modernizr.custom.js") ?>
+	<?php echo js("assets/js/jquery-zoom/jquery.zoom.js") ?>
   	<?php snippet('analytics') ?>
 
   	<!-- custom javascript -->
