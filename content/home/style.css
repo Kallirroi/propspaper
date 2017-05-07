@@ -1,19 +1,19 @@
 #columnSection {
-	margin: 0;
-    overflow: scroll;
-    width:  240% !important;
+    overflow-x: scroll;
+    width:  280% !important;
+    height: 65vh;
     border: 1px solid;
     display: block !important;
-    position: relative !important;
-	top: 10vh;
+	margin-top: 10vh;
 }
 
 #columnSection.post-container .post-item {
     /*width: calc(99.99% * 1/2- 120px);*/
-    margin-left: 35px;
-    margin-right: 35px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 0 10px;
     float: left !important;
-    width: 240px !important;
+    width: 300px !important;
     /*border: 1px solid;*/
 }
 

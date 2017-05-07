@@ -24,30 +24,30 @@ $( document ).ready(function() {
 	 	$(hovered).attr('src', $(hovered).data("src"));
 	});
 
-	$('#imageView').on('click', function(){ 
-		$('#columnSection').show();
-		$('.post-image').css('display', 'block');
-		$('.post-meta').css('display', 'none');
-		// $('footer h3').css('display', 'none');
-		$('.imageView').css('opacity', '1');
-		$('.tagView').css('opacity', '0.5');
+	// $('#imageView').on('click', function(){ 
+	// 	$('#columnSection').show();
+	// 	$('.post-image').css('display', 'block');
+	// 	$('.post-meta').css('display', 'none');
+	// 	// $('footer h3').css('display', 'none');
+	// 	$('.imageView').css('opacity', '1');
+	// 	$('.tagView').css('opacity', '0.5');
 
-		var children = $('.post-container').children();
-		for (var i = children.length - 1; i >= 0; i--) {
-			children[i].style.transform = "translate(0,0) skewX(0)";
-		}	
-		document.removeEventListener('mousemove', skewTags, false);
-	})
+	// 	var children = $('.post-container').children();
+	// 	for (var i = children.length - 1; i >= 0; i--) {
+	// 		children[i].style.transform = "translate(0,0) skewX(0)";
+	// 	}	
+	// 	document.removeEventListener('mousemove', skewTags, false);
+	// })
 
-	$('#tagView').on('click', function(e){
-		document.addEventListener('mousemove', skewTags, false);
-		$('#columnSection').hide();
-		$('.post-image').css('display', 'none');
-		$('.post-meta').css('display', 'inline-block');
-		$('footer h3').css('display', 'block');
-		$('.imageView').css('opacity', '0.5');
-		$('.tagView').css('opacity', '1');
-	});
+	// $('#tagView').on('click', function(e){
+	// 	document.addEventListener('mousemove', skewTags, false);
+	// 	$('#columnSection').hide();
+	// 	$('.post-image').css('display', 'none');
+	// 	$('.post-meta').css('display', 'inline-block');
+	// 	$('footer h3').css('display', 'block');
+	// 	$('.imageView').css('opacity', '0.5');
+	// 	$('.tagView').css('opacity', '1');
+	// });
 
 	function skewTags(e) {
 		var children = $('.post-container').children();
@@ -66,21 +66,6 @@ $( document ).ready(function() {
         var head = document.getElementsByTagName("head")[0];
         head.appendChild(trial);
     })();
-
-
-    $('#indexButton').on('click', function(){
-		$('html, body').animate({
-        	scrollTop: $("#indexSection").offset().top
-   		}, 200);
-    })
-
-	$('img')
-		.wrap('<span style="display:inline-block"></span>')
-		.css('display', 'block')
-		.parent()
-		.zoom({
-			url: 'http://media.cargocollective.com/1/3/96924/headerimg/dot100.jpg'
-	});
 
 
   });
