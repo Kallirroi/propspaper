@@ -25,12 +25,20 @@ $( document ).ready(function() {
 	});
 
 
-	function skewTags(e) {
-		var children = $('.post-container').children();
+	$('.post-meta').on('mouseover', function(e) {	
+		e.preventDefault();	
+		var children = $('.post-meta ul li');
 		for (var i = children.length - 1; i >= 0; i--) {
-			children[i].style.transform = "translate("+ (-2 * i)+"px, "+(-2*i)+"px) skewX("+(Math.sin(e.pageY/(100 * i))) * 30+"deg)";
+			children[i].style.transform = "skewX("+(Math.sin(e.pageY/(120 * i))) * 40+"deg)";
 		}
-	}
+	})
+	.on('mouseout', function(e) {
+		var children = $('.post-meta ul li');
+		console.log(children)
+		for (var i = children.length - 1; i >= 0; i--) {
+			children[i].style.transform = "skewX(0)";
+		}		
+	})
 
     (function() {
         var path = '//easy.myfonts.net/v2/js?sid=270903(font-family=Neue+Haas+Unica+Pro+Bold)&sid=270910(font-family=Neue+Haas+Unica+Pro+Medium)&sid=270912(font-family=Neue+Haas+Unica+Pro)&sid=270916(font-family=Neue+Haas+Unica+Pro+Ultra+Light)&key=6BGuzqFAWW',

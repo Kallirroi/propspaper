@@ -9,7 +9,7 @@
 		<a href="#" id="trigger-info-modal"> INFO </a>
 		<a id="indexButton" href="<?php echo url() ?>">INDEX</a>
 		<!-- <a class="imageView" id="imageView"> IMAGE VIEW </a> -->
-		<!-- <a class="tagView" id="tagView"> TAG VIEW </a>	 -->
+		<!-- <a class="tagView" id="tagView"> TAGS </a>	 -->
 	</nav>
 
 
