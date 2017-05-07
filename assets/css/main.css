@@ -174,7 +174,7 @@ h1 {
 }
 
 mark {
-  background: #ff0;
+  background: #60A2AE;
   color: #000;
 }
 
@@ -360,7 +360,7 @@ a {
 }
 
 a:hover {
-  color: #7BEEC7;
+  color: #60A2AE;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.5s;
@@ -567,7 +567,11 @@ a.title {
   font-size: 50px;
   line-height: 50px;
   text-decoration: none;
-  font-family: 'Neue Haas Unica Pro Bold';
+  font-family: 'Neue Haas Unica Pro Light' !important;
+}
+
+a.title:hover {
+  color: #000;
 }
 
 /*-------------------------------------------------*/
@@ -678,7 +682,7 @@ form.nav-alt-search {
 }
 
 .info-modal-content a {
-  color: #7BEEC7;
+  color: #60A2AE;
   text-decoration: none;
 }
 
@@ -811,6 +815,11 @@ form.nav-alt-search {
           transform: translate(-50%, -50%);
 }
 
+
+/*-------------------------------------------------*/
+/* =  issue number
+/*-------------------------------------------------*/
+
 .post-container .post-item footer {
   padding: 0 15px;
   text-align: center;
@@ -837,32 +846,30 @@ form.nav-alt-search {
   letter-spacing: 0.5px;
 }
 
+
+/*-------------------------------------------------*/
+/* =  tags after issue number
+/*-------------------------------------------------*/
+
 .post-container .post-item footer .post-meta {
   position: relative;
+  width: 100%;
+  margin-top: 20px;
+  height: 60vh;
   /*border: 1px solid;*/
-  display: none;
 }
 
 .post-container .post-item footer .post-meta ul {
   list-style: none;
   padding: 0;
-  margin: 10px;
-}
-
-.post-container .post-item footer .post-meta ul li {
-  color: #000;
-  opacity: 0.6;
-  text-transform: uppercase;
+  line-height: 35px;
 }
 
 .post-container .post-item footer .post-meta ul li a {
   text-decoration: none;
-  font-size: 24px;
 }
 
-.post-container .post-item footer .post-meta ul li a:hover {
-  color: #7BEEC7;
-}
+
 
 
 /*-------------------------------------------------*/
@@ -956,7 +963,7 @@ form.nav-alt-search {
 }
 
 .post-wrapper .post-content .post-meta .author a:hover {
-  color: #7BEEC7;
+  color: #60A2AE;
 }
 
 .post-wrapper .post-content .post-meta .socbtn {
@@ -974,7 +981,7 @@ form.nav-alt-search {
 }
 
 .post-wrapper .post-content .post-meta .socbtn .share:hover {
-  color: #7BEEC7;
+  color: #60A2AE;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.5s;
@@ -1017,7 +1024,7 @@ form.nav-alt-search {
 }
 
 .post-wrapper .post-content .post-meta .socbtn .popup a:hover {
-  color: #7BEEC7;
+  color: #60A2AE;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.5s;
@@ -1097,11 +1104,6 @@ form.nav-alt-search {
     margin-top: 20px;
     padding: 0 40px;
   }
-  .post-container .post-item footer .post-meta {
-    top: 40%;
-    left: 0%;
-    width: 100%;
-  }
 
   .post-wrapper .post-media {
     width: 45%;
@@ -1124,10 +1126,8 @@ form.nav-alt-search {
     overflow: scroll;
     padding-bottom: 60px;
     background: #fff;
-/*    background: #000;
-    color: #fff;*/
-    z-index: 1001;
   }
+
   .footer {
     margin-left: 60px;
     margin-right: 60px;
@@ -1165,11 +1165,7 @@ form.nav-alt-search {
   .post-container .post-item footer .post-content {
     padding: 0 20px;
   }
-  .post-container .post-item footer .post-meta {
-    top: 40%;
-    left: 0%;
-    width: 100%;
-  }
+
   .pagination {
     padding: 110px 60px;
   }
