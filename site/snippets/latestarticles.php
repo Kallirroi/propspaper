@@ -42,7 +42,7 @@
 
 
 <!-- Latest articles -->
-<section class="post-container" id="indexSection">
+<!-- <section class="post-container" id="indexSection">
 		<?php foreach($articles as $article): ?>
 			<article class="post-item grid-sizer">	
 				<header>
@@ -81,4 +81,4 @@
 
 			</article>
 		<?php endforeach ?>
-</section>
+</section> -->
