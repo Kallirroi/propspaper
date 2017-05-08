@@ -4,4 +4,4 @@ $('img')
 	.parent()
 	.zoom(function(e){
 		url: e.target.src
-});
+	});

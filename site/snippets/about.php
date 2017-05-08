@@ -6,9 +6,10 @@
 
 
 ?>
-<section class="info-modal info-modal-scale">
+<section id="draggable"  class="info-modal">
 	<div class="info-modal-content">
-		<a class="info-modal-close"><span class="icon-close"></span></a>
+		<a class="info-modal-close">close</a>
 		<?php echo $about->text()->kirbytext() ?>
 	</div>
 </section>
+

@@ -34,11 +34,10 @@ $( document ).ready(function() {
 	})
 	.on('mouseout', function(e) {
 		var children = $('.post-meta ul li');
-		console.log(children)
 		for (var i = children.length - 1; i >= 0; i--) {
 			children[i].style.transform = "skewX(0)";
 		}		
-	})
+	});
 
     (function() {
         var path = '//easy.myfonts.net/v2/js?sid=270903(font-family=Neue+Haas+Unica+Pro+Bold)&sid=270910(font-family=Neue+Haas+Unica+Pro+Medium)&sid=270912(font-family=Neue+Haas+Unica+Pro)&sid=270916(font-family=Neue+Haas+Unica+Pro+Ultra+Light)&key=6BGuzqFAWW',

@@ -9,53 +9,17 @@ $(document).ready(function(){
   
     $(".nav-alt-search").first().expandSearch();
 
-
     	
     /*-------------------------------------------------*/
 	/* =  info modal popup
 	/*-------------------------------------------------*/
-
-	$(window).on('load',function(){
  	
- 	var triggerBttn = document.getElementById( 'trigger-info-modal' ),
-		overlay = document.querySelector( 'section.info-modal' ),
-		closeBttn = overlay.querySelector( 'a.info-modal-close' );
-		transEndEventNames = {
-			'WebkitTransition': 'webkitTransitionEnd',
-			'MozTransition': 'transitionend',
-			'OTransition': 'oTransitionEnd',
-			'msTransition': 'MSTransitionEnd',
-			'transition': 'transitionend'
-		},
-		transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
-		support = { transitions : Modernizr.csstransitions };
-	
-	function toggleOverlay() {
-		if( classie.has( overlay, 'open' ) ) {
-			classie.remove( overlay, 'open' );
-			classie.add( overlay, 'close' );
-			var onEndTransitionFn = function( ev ) {
-				if( support.transitions ) {
-					if( ev.propertyName !== 'visibility' ) return;
-					this.removeEventListener( transEndEventName, onEndTransitionFn );
-				}
-				classie.remove( overlay, 'close' );
-			};
-			if( support.transitions ) {
-				overlay.addEventListener( transEndEventName, onEndTransitionFn );
-			}
-			else {
-				onEndTransitionFn();
-			}
-		}
-		else if( !classie.has( overlay, 'close' ) ) {
-			classie.add( overlay, 'open' );
-		}
-	}
+	$('#trigger-info-modal').on( 'click', function() {
+		$('section.info-modal').show();
+	});
 
-	triggerBttn.addEventListener( 'click', toggleOverlay );
-	closeBttn.addEventListener( 'click', toggleOverlay );
-
+	$('a.info-modal-close').on( 'click', function(){
+		$('section.info-modal').hide();
 	});
 
 	/*-------------------------------------------------*/

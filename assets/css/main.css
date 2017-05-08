@@ -254,7 +254,7 @@ html input[type="button"], input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
-  cursor: url('../img/cursor.png'), auto;
+  
   /* 3 */
 }
 
@@ -642,80 +642,41 @@ form.nav-alt-search {
 
 /* Overlay style */
 .info-modal {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.95);
-  text-align: center;
-  overflow-y: scroll;
-  z-index: 2000;
+  position:absolute;
+  top:60px;
+  left:200px;
+  width:278px;
+  height:410px;
+  z-index:2000;
+  border:1px solid #666;
+  box-shadow: 5px 5px 5px rgba(102,102,102, 0.5);
+  background-color:#fff;
+  display:none;
+  cursor:move;
   /* has to be scroll, not auto */
   -webkit-overflow-scrolling: touch;
 }
 
 /* Overlay closing cross */
-.info-modal .info-modal-close {
-  font-size: 20px;
+a.info-modal-close {
+  font-size: 14px;
+  text-decoration: underline;
   position: relative;
-  z-index: 2000;
-  cursor: url('../img/cursor.png'), auto;
+  z-index: 2001;
+  cursor: pointer;
+  float: right;
+  margin: 2px 2px 0 0;
 }
 
 .info-modal-content {
-  width: 80%;
   display: block;
   margin: 0 auto;
-  color: #fff;
-  padding-top: 30px;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 10px;
 }
 
-.info-modal-content h2 {
-  text-align: left;
-  margin-top: 60px;
-}
 
-.info-modal-content p {
-  text-align: left;
-  margin-top: 10px;
-}
-
-.info-modal-content a {
-  color: #60A2AE;
-  text-decoration: none;
-}
-
-.info-modal-content a:hover {
-  color: #fff;
-  /*text-decoration: underline;*/
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-}
-
-/* Effects */
-.info-modal-scale {
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-      transform: scale(0.9);
-  -webkit-transition: -webkit-transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
-  transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
-}
-
-.info-modal-scale.open {
-  visibility: visible;
-  opacity: 1;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-      transform: scale(1);
-  -webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
-  transition: transform 0.4s, opacity 0.4s;
-  z-index: 1000;
-}
 
 /*-------------------------------------------------*/
 /* =  9. post-features
@@ -972,7 +933,7 @@ form.nav-alt-search {
   color: #1E1E1E;
   font-size: 16px;
   line-height: 40px;
-  cursor: url('../img/cursor.png'), auto;
+  
   float: right;
 }
 
@@ -1079,13 +1040,7 @@ form.nav-alt-search {
     font-size: 24px;
     line-height: 24px;
   }
-  .info-modal .info-modal-close {
-    font-size: 40px;
-  }
-  .info-modal-content {
-    width: 60%;
-    padding: 120px;
-  }
+
   .post-container {
     margin: 60px auto;
   }
