@@ -1,6 +1,6 @@
 <!-- Latest articles -->
 <section class="post-container"  id="indexSection">
-		<?php foreach($articles as $article): ?>
+		<?php foreach($articles->sortBy('title', 'desc') as $article): ?>
 			<article class="post-item grid-sizer">	
 				<header>
 					<?php if($image = $article->images()->sortBy('sort', 'asc')->first()): ?>
