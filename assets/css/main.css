@@ -631,7 +631,8 @@ form.nav-alt-search {
 #searchTerms {
   position: absolute;
   text-transform: uppercase;
-  /*border: 1px solid red;*/
+/*  width: 200px;
+  height: 20px;*/
   font-size: 36px;
   margin-top: 50px;
 }

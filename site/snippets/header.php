@@ -11,9 +11,6 @@
 		<!-- <a class="imageView" id="imageView"> IMAGE VIEW </a> -->
 		<!-- <a class="tagView" id="tagView"> TAGS </a>	 -->
 	</nav>
-
-
-
 </header>
 
 <?php snippet('about') ?>
