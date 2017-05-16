@@ -1032,7 +1032,6 @@ a.info-modal-close {
 }
 #screensaver .item {
   position: absolute;
-  border: 1px solid;
   top: 0vh;
   left: 0vw;
   width: 360px;

@@ -18,13 +18,12 @@
 
 
 		</div>
-
 		<div id="screensaver" data-duration-start="3000" data-duration-scroll="4000">
-			<?php foreach($page->images()->filterBy('name', '*=', 'fragment') as $image): ?>
-				<div class="item" style="background-image: url(<?php echo thumb($image)->url()?>) "></div>
-			<?php endforeach ?>
+				<?php foreach($page->images()->filterBy('name', '*=', 'fragment') as $image): ?>
+					<div class="item" style="background-image: url(<?php echo thumb($image)->url()?>) "></div>
+				<?php endforeach ?>
 		</div>
-
+		
 		<div class="post-content" >
 
 			<h1><?php echo $page->title()->html() ?></h1>
