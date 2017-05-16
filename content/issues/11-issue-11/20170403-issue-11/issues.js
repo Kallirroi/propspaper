@@ -8,5 +8,8 @@ $('img')
 
 
 //call screensaver
+
 mos.Screensaver.init();
+mos.Screensaver.initMouseTracking();
 mos.Screensaver.start();
+// mos.Screensaver.stopMouseTracking();
