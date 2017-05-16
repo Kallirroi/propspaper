@@ -1,11 +1,10 @@
-var mos = mos || {};
 
-mos.Screensaver = (function($) {
+var screensaver = (function($) {
 	"use strict";
 
 	var 
-		_durationBeforeSlide = 0, //3000,
-		_durationBeforeActivateSS = 0, //60000,
+		_durationBeforeSlide = 3000, //3000,
+		_durationBeforeActivateSS = 6000, //60000,
 		_durationFade = 1000,
 		_timeoutSlide = false,
 		_timeoutTracking = false;
@@ -13,7 +12,6 @@ mos.Screensaver = (function($) {
 	function start() {
 		console.log('Screensaver.start()');
 
-		$('body').addClass('overflow');
 
 		var $cont = $('#screensaver');
 		
@@ -34,21 +32,7 @@ mos.Screensaver = (function($) {
 				.removeClass('starting');
 		}, 1000);
 
-		/*
-		$cont.fadeIn(_durationFade, function() {
-
-			$cont
-				.find('.item')
-				.first()
-				.addClass('active');
-
-			$('body').addClass('overflow');
-		});
-		*/
-
 		stopMouseTracking();
-
-		// Slide timer
 
 		clearTimeout(_timeoutSlide);
 		_timeoutSlide = setTimeout(gotoNext, _durationBeforeSlide);
@@ -57,7 +41,6 @@ mos.Screensaver = (function($) {
 	function stop() {
 		console.log('  stop()');
 
-		$('body').removeClass('overflow');
 	
 		var $ss = $('#screensaver');
 
@@ -68,7 +51,6 @@ mos.Screensaver = (function($) {
 				.find('.item.active')
 				.removeClass('active');
 
-			$('body').removeClass('overflow');
 		});		
 
 		clearTimeout(_timeoutSlide);
@@ -95,9 +77,13 @@ mos.Screensaver = (function($) {
 
 		if($cont.length > 0) {
 
-			$('body').mousemove(throttle( mouseMoving() ,1000));
+			$('body').mousemove(function(){
+				throttle( mouseMoving() ,1000);
+			});
 
-			$(window).scroll(throttle( mouseMoving(), 600));
+			$(window).scroll(function(){
+				throttle( mouseMoving() ,600);
+			});
 
 			mouseMoving();
 		}		
@@ -122,7 +108,9 @@ mos.Screensaver = (function($) {
 
 		if($next.length > 0) {
 
-			$next.addClass('active');
+			$next.addClass('active')
+				.css('left', Math.random() * 100 + 'vw')
+				.css('top', Math.random() * 100 + 'vh');
 
 		} else {
 			
@@ -153,20 +141,14 @@ mos.Screensaver = (function($) {
 
 			var $ss = $('#screensaver');
 
-			//
-
 			_durationBeforeSlide = $ss.data('duration-scroll');
 			_durationBeforeActivateSS = $ss.data('duration-start');
-
-			//
 
 			$ss.click(function() {
 				console.log('Screensaver.click()');
 
 				stop();
 			});
-
-			//
 
 			$(document).keydown(function(e) {
 

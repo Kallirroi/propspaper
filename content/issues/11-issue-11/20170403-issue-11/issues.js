@@ -9,7 +9,7 @@ $('img')
 
 //call screensaver
 
-mos.Screensaver.init();
-mos.Screensaver.initMouseTracking();
-mos.Screensaver.start();
-// mos.Screensaver.stopMouseTracking();
+screensaver.init();
+screensaver.initMouseTracking();
+// screensaver.start();
+// screensaver.stopMouseTracking();
