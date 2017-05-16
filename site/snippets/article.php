@@ -19,11 +19,10 @@
 
 		</div>
 
-		<div id="screensaver" data-duration-start="1000" data-duration-scroll="1500">
-			<div class="item"></div>
-			<div class="item"></div>
-			<div class="item"></div>
-			<div class="item"></div>
+		<div id="screensaver" data-duration-start="3000" data-duration-scroll="3500">
+			<?php foreach($page->images()->filterBy('name', '*=', 'fragment') as $image): ?>
+				<div class="item" style="background-image: url(<?php echo thumb($image, array('width' => 240))->url()?>) "></div>
+			<?php endforeach ?>
 		</div>
 
 		<div class="post-content" >

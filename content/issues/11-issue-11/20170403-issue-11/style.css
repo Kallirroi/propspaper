@@ -9,7 +9,7 @@
 #screensaver.starting,
 #screensaver.active {
   position: fixed;
-  z-index: 10;
+  z-index: 3000;
   top: 0;
   left: 0;
   width: 100%;
@@ -18,15 +18,14 @@
 }
 #screensaver .item {
   position: absolute;
-  top: 10vh;
-  left: 10vw;
-  width: 30%;
+  top: 30vh;
+  left: 40vw;
+  width: 20%;
   height: 30%;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
-  background-image: url(fragments/1-4.png);
   opacity: 0;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;

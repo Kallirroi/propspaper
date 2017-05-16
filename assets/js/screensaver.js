@@ -95,18 +95,9 @@ mos.Screensaver = (function($) {
 
 		if($cont.length > 0) {
 
-			$('body').mousemove(function() {
+			$('body').mousemove(throttle( mouseMoving() ,1000));
 
-				mouseMoving();
-				
-			}.throttle(1000));
-
-			$(window).scroll(function() {
-				//console.log('  scroll');
-
-				mouseMoving();
-
-			}.throttle(600));
+			$(window).scroll(throttle( mouseMoving(), 600));
 
 			mouseMoving();
 		}		
@@ -141,25 +132,46 @@ mos.Screensaver = (function($) {
 		_timeoutSlide = setTimeout(gotoNext, _durationBeforeSlide);
 	}
 
+	function throttle (callback, limit) {
+
+	  var wait = false;
+	  return function () {
+	    if (!wait) {
+
+	      callback.apply(null, arguments);
+	      wait = true;
+	      setTimeout(function () {
+	        wait = false;
+	      }, limit);
+	    }
+	  }
+	}
+
+
 	return {
 		init: function() {
 
 			var $ss = $('#screensaver');
-			console.log('screensaver')
+
+			//
 
 			_durationBeforeSlide = $ss.data('duration-scroll');
 			_durationBeforeActivateSS = $ss.data('duration-start');
 
+			//
+
 			$ss.click(function() {
-				//console.log('Screensaver.click()');
+				console.log('Screensaver.click()');
 
 				stop();
 			});
 
+			//
+
 			$(document).keydown(function(e) {
 
 				var key = e.charCode ? e.charCode : e.keyCode ? e.keyCode : 0;
-				//console.log(key);
+				// console.log(key);
 
 				if(key === 27) { //esc
 					stop();

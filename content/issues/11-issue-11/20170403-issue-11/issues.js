@@ -7,6 +7,6 @@ $('img')
 });
 
 
-
+//call screensaver
 mos.Screensaver.init();
 mos.Screensaver.start();
