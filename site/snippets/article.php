@@ -25,13 +25,13 @@
 			<?php echo $page->text()->kirbytext() ?>
 
 			<div class="post-meta">
- 				<div class="author"> 
+<!--  				<div class="author"> 
 					<?php foreach(str::split($page->tags()) as $tag): ?> 
 					    <a href="<?php echo url('issues/' . url::paramsToString(['tag' => $tag])) ?>">
 					      <?php echo html($tag) ?>
 					    </a>
 					<?php endforeach ?>
-				</div> 
+				</div>  -->
 
 				<div class="socbtn">
 					<span class="icon-socials share">
