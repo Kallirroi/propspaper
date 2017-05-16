@@ -1026,8 +1026,8 @@ a.info-modal-close {
   z-index: 3000;
 /*  top: 0;
   left: 0;*/
-  width: 100%;
-  height: 100%;
+  width: 10vw;
+  height: 10vh;
   display: block;
 }
 #screensaver .item {
@@ -1035,8 +1035,10 @@ a.info-modal-close {
   border: 1px solid;
   top: 0vh;
   left: 0vw;
-  width: 20%;
-  height: 30%;
+  width: 10vw;
+  height: 10vh;
+  margin: 0;
+  padding: 0;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;

@@ -3,9 +3,9 @@ var screensaver = (function($) {
 	"use strict";
 
 	var 
-		_durationBeforeSlide = 3000, //3000,
+		_durationBeforeSlide = 4000, //3000,
 		_durationBeforeActivateSS = 6000, //60000,
-		_durationFade = 1000,
+		_durationFade = 2000,
 		_timeoutSlide = false,
 		_timeoutTracking = false;
 	
@@ -30,7 +30,7 @@ var screensaver = (function($) {
 			$cont
 				.addClass('active')
 				.removeClass('starting');
-		}, 1000);
+		}, 3000);
 
 		stopMouseTracking();
 
@@ -109,8 +109,8 @@ var screensaver = (function($) {
 		if($next.length > 0) {
 
 			$next.addClass('active')
-				.css('left', Math.random() * 100 + 'vw')
-				.css('top', Math.random() * 100 + 'vh');
+				.css('left', Math.random() * 90 + 'vw')
+				.css('top', Math.random() * 90 + 'vh');
 
 		} else {
 			
