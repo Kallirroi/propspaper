@@ -8,7 +8,7 @@
 							<a href="<?php echo $article->url() ?>">
 								<img id="mainPageImages<?php echo html($article->title()) ?>" class="lazy-loaded" 
 								data-src="<?php echo thumb($image, array('width' => 515))->url() ?>"  
-								data-hover="<?php echo thumb($article->images()->sortBy('sort', 'asc')->flip()->first(), array('width' => 515))->url() ?>" 
+								data-hover="<?php echo thumb($article->images()->filterBy('name', '*=', 'props')->sortBy('sort', 'asc')->flip()->first(), array('width' => 515))->url() ?>" 
 								src="<?php echo thumb($image, array('width' => 515))->url() ?>" 
 								alt="<?php echo html($article->title()) ?>"
 									/>
