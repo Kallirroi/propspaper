@@ -5,3 +5,9 @@ $('img')
 	.zoom(function(e){
 		url: e.target.src
 	});
+
+
+screensaver.init();
+screensaver.initMouseTracking();
+// screensaver.start();
+// screensaver.stopMouseTracking();
