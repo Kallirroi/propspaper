@@ -5,6 +5,7 @@
 	<?php echo js("assets/js/jquery-ui/jquery-ui.js") ?>
 	<?php echo js("assets/js/jquery.expand-search.min.js") ?>
 	<?php echo js("assets/js/classie.js") ?>
+	<?php echo js("assets/js/screensaver.js") ?>
 	<?php echo js("assets/js/isotope.js") ?>
 	<?php echo js("assets/js/modernizr.custom.js") ?>
 	<?php echo js("assets/js/jquery-zoom/jquery.zoom.js") ?>

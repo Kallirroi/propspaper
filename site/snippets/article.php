@@ -1,5 +1,4 @@
 <section class="post-wrapper">
-
 		<div class="post-media">
 			<?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
 			<figure>
@@ -16,6 +15,15 @@
 				</noscript>
 			</figure>
 			<?php endforeach ?>
+
+
+		</div>
+
+		<div id="screensaver" data-duration-start="1000" data-duration-scroll="1500">
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
 		</div>
 
 		<div class="post-content" >
@@ -45,5 +53,8 @@
 		 
 		</div>
 </section>
+
+
+
  
 		 

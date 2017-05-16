@@ -37,5 +37,6 @@
 				</footer>
 
 			</article>
+			
 		<?php endforeach ?>
 </section>

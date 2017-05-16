@@ -5,3 +5,8 @@ $('img')
 	.zoom(function(e){
 		url: e.target.src
 });
+
+
+
+mos.Screensaver.init();
+mos.Screensaver.start();
