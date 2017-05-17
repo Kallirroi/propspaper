@@ -37,6 +37,8 @@
   font-style: normal;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,500');
+
 /*-------------------------------------------------*/
 /* =  1. variables
 /*-------------------------------------------------*/
@@ -290,8 +292,9 @@ body {
   /*font-family: 'Helvetica Neue', BloggerSans;*/
   /*font-family: 'Neue Haas Unica Pro Bold';*/
   /*font-family: 'Neue Haas Unica Pro Medium';*/
-  font-family: 'Neue Haas Unica Pro';
+  /*font-family: 'Neue Haas Unica Pro';*/
   /*font-family: 'Neue Haas Unica Pro Ultra Light';*/
+  font-family: 'Libre Franklin', sans-serif;
   font-size: 18px;
   color: #1E1E1E;
   letter-spacing: 0.5px;
@@ -315,9 +318,7 @@ a:hover {
   transition-duration: 0.5s;
 }
 
-i {
-  font-family: BloggerSansItalic;
-}
+
 
 ul {
   margin-left: 20px;
@@ -516,12 +517,15 @@ a.title {
   font-size: 50px;
   line-height: 50px;
   text-decoration: none;
-  font-family: 'Neue Haas Unica Pro' !important;
+  /*font-family: 'Neue Haas Unica Pro' !important;*/
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 500;
+
 }
 
 a.title:hover {
   color: #000;
-  cursor: url(../img/cursor.png), auto;
+  cursor: url(../img/hover.png), auto;
 }
 
 /*-------------------------------------------------*/
@@ -546,8 +550,9 @@ a.title:hover {
   text-decoration: none;
   padding-right: 100px;
   padding-left: 50px;
-  font-family: 'Neue Haas Unica Pro';
-
+  /*font-family: 'Neue Haas Unica Pro';*/
+  font-family: 'Libre Franklin', sans-serif;
+  
 }
 
 
@@ -594,24 +599,22 @@ form.nav-alt-search {
 
 
 /* Overlay style */
-.info-modal {
+.info-modal, .info-modal-contributors {
   position:fixed;
   top:60px;
   right:200px;
   width:300px;
-  height:440px;
+  height: auto;
   z-index:2000;
   border:1px solid #666;
   box-shadow: 5px 5px 5px rgba(102,102,102, 0.5);
   background-color:#fff;
   display:none;
   cursor: move;
-  /* has to be scroll, not auto */
   -webkit-overflow-scrolling: touch;
 }
 
-/* Overlay closing cross */
-a.info-modal-close {
+a.info-modal-close , a.info-modal-close-contributors {
   font-size: 12px;
   text-decoration: underline;
   position: relative;
@@ -621,7 +624,7 @@ a.info-modal-close {
   margin: 2px 2px 0 0;
 }
 
-.info-modal-content {
+.info-modal-content, .info-modal-content-contributors {
   display: block;
   margin: 0 auto;
   font-size: 14px;

@@ -7,8 +7,8 @@ email: kallirroi.retzepi@gmail.com
 language: en
 role: admin
 history:
+  - contributors
+  - about
   - issues/issue-16/issue-12
   - issues/issue-16
   - issues/issue-15/issue-12
-  - issues/issue-15
-  - issues/issue-14

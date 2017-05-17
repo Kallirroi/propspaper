@@ -95,27 +95,17 @@ $(document).ready(function(){
 		$('section.info-modal').hide();
 	});
 
+    /*-------------------------------------------------*/
+	/* =  contributors modal popup
 	/*-------------------------------------------------*/
-	/* =  isotope - post items
-	/*-------------------------------------------------*/
-
-	$(window).on('load',function(){
-
-		var $container = $('.post-container');
-		
-		// initialize isotope
-		$container.isotope({
-
-		  itemSelector : '.post-item',
-
-		  masonry: {
-		    columnWidth: '.grid-sizer'
-		  }
-		  // options...
-		});
-
+ 	
+	$('#trigger-info-modal-contributors').on( 'click', function() {
+		$('section.info-modal-contributors').show();
 	});
 
+	$('a.info-modal-close-contributors').on( 'click', function(){
+		$('section.info-modal-contributors').hide();
+	});
 
 	/*-------------------------------------------------*/
 	/* =  socials share
