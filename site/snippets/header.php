@@ -2,9 +2,8 @@
 <!-- Header (logo/Browse button/Info/Search Input) -->
 <header class="header">
 	
-	<a class="title" >PROPS</a>
-	<span id="searchTerms"></span>
-	
+	<a class="title" >PROPS </a> 
+	<div id="searchTerms"></div> 
 	<nav class="nav-alt">
 		<a id="trigger-info-modal"> INFO </a>
 		<a id="indexButton" href="<?php echo url() ?>">INDEX</a>
