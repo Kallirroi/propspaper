@@ -12,10 +12,12 @@ $(document).ready(function(){
 	var terms = query.replace(/%20/g, ' ');
 
 	if (terms.toString() === "") { //main page
+		$('.title').show();
 		$('#searchTerms').css('opacity', 0);
 	} 
 	else { //search page
-		$('#searchTerms').text(" for  "+terms);
+		$('#searchTerms').text("PROPS for  "+terms);
+		$('.title').hide();
 		$('#searchTerms').css('opacity', 1);
 	}
 
