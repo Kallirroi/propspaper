@@ -11,7 +11,8 @@
 	<?php echo js("assets/js/modernizr.custom.js") ?>
 	<?php echo js("assets/js/jquery-zoom/jquery.zoom.js") ?>
   	<?php snippet('analytics') ?>
-
+	<?= js('assets/plugins/embed/js/embed.js') ?>
+	
   	<!-- custom javascript -->
 	<?php foreach($page->files()->filterBy('extension', 'js') as $js): ?>
 	<?php echo js($js->url()) ?>

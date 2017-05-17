@@ -22,7 +22,7 @@
   <?php echo css('@auto') ?>
   <?php echo css('assets/css/main.css') ?> 
   <?php echo css('assets/js/jquery-ui/jquery-ui.css') ?> 
-
+  <?= css('assets/plugins/embed/css/embed.css') ?>
   <?php foreach($page->files()->filterBy('extension', 'css') as $css): ?>
   <?php echo css($css->url()) ?>
   <?php endforeach ?>  
