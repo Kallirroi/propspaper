@@ -646,7 +646,7 @@ form.nav-alt-search {
 
 /* Overlay style */
 .info-modal {
-  position:absolute;
+  position:fixed;
   top:60px;
   right:200px;
   width:278px;
@@ -687,25 +687,23 @@ a.info-modal-close {
 /*-------------------------------------------------*/
 
 #indexSection {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    width:  310% !important;
-    height: 65vh;
-    /*border: 1px solid;*/
-    display: block !important;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width:  310% !important;
+  height: 70vh;
+  /*border: 1px solid;*/
+  display: block !important;
   margin-top: 16vh;
 }
 
 #indexSection.post-container .post-item {
-    /*width: calc(99.99% * 1/2- 120px);*/
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 0 10px;
-    /*float: left !important;*/
-    width: 300px !important;
-    /*border: 1px solid;*/
-    overflow-y: scroll !important;
-    height: 70vh;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 0 10px;
+  width: 300px !important;
+  /*border: 1px solid;*/
+  overflow-y: scroll !important;
+  height: 70vh;
 }
 
 
@@ -1124,6 +1122,7 @@ display: none;
   .post-container {
     margin: 60px auto;
   }
+
   .post-container .post-item {
     width: calc(23.99% * 1/1 - 120px);
     margin-left: 60px;
