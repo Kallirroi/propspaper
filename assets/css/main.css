@@ -27,60 +27,7 @@
 /*-------------------------------------------------*/
 /* =  0. fonts
 /*-------------------------------------------------*/
-@font-face {
-  font-family: 'BloggerSans';
-  src: url("../fonts/BloggerSans.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/BloggerSans.eot?#iefix") format("embedded-opentype"), url("../fonts/BloggerSans.woff") format("woff"), url("../fonts/BloggerSans.ttf") format("truetype"), url("../fonts/BloggerSans.svg#BloggerSans") format("svg");
-  /* Legacy iOS */
-  font-style: normal;
-  font-weight: 400;
-  text-rendering: optimizeLegibility;
-}
 
-@font-face {
-  font-family: 'BloggerSans';
-  src: url("../fonts/BloggerSans-Bold.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/BloggerSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/BloggerSans-Bold.woff") format("woff"), url("../fonts/BloggerSans-Bold.ttf") format("truetype"), url("../fonts/BloggerSans-Bold.svg#BloggerSans-Bold") format("svg");
-  /* Legacy iOS */
-  font-style: normal;
-  font-weight: 700;
-  text-rendering: optimizeLegibility;
-}
-
-@font-face {
-  font-family: 'BloggerSansItalic';
-  src: url("../fonts/BloggerSans-LightItalic.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/BloggerSans-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/BloggerSans-LightItalic.woff") format("woff"), url("../fonts/BloggerSans-LightItalic.ttf") format("truetype"), url("../fonts/BloggerSans-LightItalic.svg#BloggerSans-LightItalic") format("svg");
-  /* Legacy iOS */
-  font-style: italic;
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
-}
-
-@font-face {
-  font-family: 'BloggerSans';
-  src: url("../fonts/BloggerSans-Light.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/BloggerSans-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/BloggerSans-Light.woff") format("woff"), url("../fonts/BloggerSans-Light.ttf") format("truetype"), url("../fonts/BloggerSans-Light.svg#BloggerSans-Light") format("svg");
-  /* Legacy iOS */
-  font-style: normal;
-  font-weight: 300;
-  text-rendering: optimizeLegibility;
-}
-
-@font-face {
-  font-family: 'BloggerSans';
-  src: url("../fonts/BloggerSans-Medium.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/BloggerSans-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/BloggerSans-Medium.woff") format("woff"), url("../fonts/BloggerSans-Medium.ttf") format("truetype"), url("../fonts/BloggerSans-Medium.svg#BloggerSans-Medium") format("svg");
-  /* Legacy iOS */
-  font-style: normal;
-  font-weight: 500;
-  text-rendering: optimizeLegibility;
-}
 
 @font-face {
   font-family: 'icomoon';
@@ -98,7 +45,7 @@
 /*-------------------------------------------------*/
 html {
   font-family: sans-serif;
-
+  cursor: url(../img/cursor.png), auto;
   /* 1 */
   -ms-text-size-adjust: 100%;
   /* 2 */
@@ -153,6 +100,7 @@ a {
 a:active,
 a:hover {
   outline: 0;
+  cursor: url(../img/hover.png), auto;
 }
 
 abbr[title] {
@@ -573,6 +521,7 @@ a.title {
 
 a.title:hover {
   color: #000;
+  cursor: url(../img/cursor.png), auto;
 }
 
 /*-------------------------------------------------*/
@@ -593,7 +542,7 @@ a.title:hover {
 
 .nav-alt a {
   font-size: 30px;
-  cursor: pointer;
+  cursor: url(../img/hover.png), auto;
   text-decoration: none;
   padding-right: 100px;
   padding-left: 50px;
@@ -656,7 +605,7 @@ form.nav-alt-search {
   box-shadow: 5px 5px 5px rgba(102,102,102, 0.5);
   background-color:#fff;
   display:none;
-  cursor:move;
+  cursor: move;
   /* has to be scroll, not auto */
   -webkit-overflow-scrolling: touch;
 }
@@ -667,7 +616,7 @@ a.info-modal-close {
   text-decoration: underline;
   position: relative;
   z-index: 2001;
-  cursor: pointer;
+  cursor: url(../img/hover.png), auto;
   float: right;
   margin: 2px 2px 0 0;
 }

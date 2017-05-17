@@ -7,7 +7,6 @@ $(document).ready(function(){
 
     //-------------------------PROPS FOR...... -------------------------
 	var query = window.location.href.split('tag:').slice(1).toString();
-	console.log(query)
 
 	//have to replace %20 by a '   '
 	var terms = query.replace(/%20/g, ' ');
