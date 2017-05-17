@@ -10,5 +10,3 @@ history:
   - issues/issue-11/issue-11
   - about
   - issues/issue-10/issue-10
-  - issues/issue-1/1
-  - issues/issue-6/issue-6

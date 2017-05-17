@@ -2,10 +2,18 @@
 
 $(document).ready(function(){
 
-
+	/*-------------------------------------------------*/
+    //-------------------------Initialization -------------------------
+	/*-------------------------------------------------*/
 	$("#draggable" ).draggable();
 
+	var issuesPublished = $('#indexSection').children().length;
+	var indexSectionWidth = 310/11*issuesPublished;
+	$('#indexSection').css('width', indexSectionWidth+'%');
+
+	/*-------------------------------------------------*/
     //-------------------------PROPS FOR...... -------------------------
+	/*-------------------------------------------------*/
 	var query = window.location.href.split('tag:').slice(1).toString();
 
 	//have to replace %20 by a '   '
@@ -21,8 +29,10 @@ $(document).ready(function(){
 		$('#searchTerms').css('opacity', 1);
 	}
 
-
+	/*-------------------------------------------------*/
 	//-------------------------show back/front image-------------------------
+	/*-------------------------------------------------*/
+
 	$('.post-item').on('mouseover', function(e) {
 		var hovered = e.target;
 		var hoveredNumber = $(hovered).attr('alt');
@@ -32,7 +42,10 @@ $(document).ready(function(){
 	 	$(hovered).attr('src', $(hovered).data("src"));
 	});
 
+	/*-------------------------------------------------*/
 	//-------------------------Skew TAGS-------------------------
+	/*-------------------------------------------------*/
+
 	$('.post-meta').on('mouseover', function(e) {	
 		e.preventDefault();	
 		var children = $('.post-meta ul li');
@@ -47,8 +60,9 @@ $(document).ready(function(){
 		}		
 	});
 
-
+	/*-------------------------------------------------*/
 	//-------------------------Load Fonts-------------------------
+	/*-------------------------------------------------*/
     (function() {
         var path = '//easy.myfonts.net/v2/js?sid=270903(font-family=Neue+Haas+Unica+Pro+Bold)&sid=270910(font-family=Neue+Haas+Unica+Pro+Medium)&sid=270912(font-family=Neue+Haas+Unica+Pro)&sid=270916(font-family=Neue+Haas+Unica+Pro+Ultra+Light)&key=6BGuzqFAWW',
             protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
@@ -59,10 +73,6 @@ $(document).ready(function(){
         var head = document.getElementsByTagName("head")[0];
         head.appendChild(trial);
     })();
-
-
-
-
 
 
 

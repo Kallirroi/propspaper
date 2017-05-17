@@ -638,7 +638,6 @@ a.info-modal-close {
 #indexSection {
   overflow-x: scroll;
   overflow-y: hidden;
-  width:  310% !important;
   height: 70vh;
   /*border: 1px solid;*/
   display: block !important;
