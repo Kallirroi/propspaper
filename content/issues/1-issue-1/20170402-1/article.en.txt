@@ -14,4 +14,4 @@ Text:
 
 ----
 
-Tags: collection of collections,testTag
+Tags: collection of collections

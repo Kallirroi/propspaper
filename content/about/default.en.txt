@@ -16,10 +16,12 @@ Pagecontent:
 
 Text: 
 
-<br> 
+<br>
+PROPS is a weekly paper of images. <br>
+PROPS disregards disciplinary boundaries and proposes an alternative visual atlas of juxtapositions.  <br>
+PROPS is an expanded archive of work by image makers, image collectors and accidental image connoisseurs. <br>
+PROPS is a research experiment conceived by Lucy Liu and Matthew Bohne to examine visual knowledge and design.<br>
 
-PROPS is a weekly paper of images. PROPS disregards disciplinary boundaries and proposes an alternative visual atlas of juxtapositions. PROPS is an expanded archive of work by image makers, image collectors and accidental image connoisseurs. PROPS is a research experiment conceived by Lucy Liu and Matthew Bohne to examine visual knowledge and design.
-
-email: propspaper [at] gmail.com
+(email: propspape@gmail.com text: Contact)
 
 Copyright 2017 • made by <a href="http://kalli.website/">Kalli</a>

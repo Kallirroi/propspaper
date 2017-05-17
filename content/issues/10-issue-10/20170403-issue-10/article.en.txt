@@ -14,4 +14,4 @@ Text: TBD
 
 ----
 
-Tags: light mobile,testTag
+Tags: light mobile

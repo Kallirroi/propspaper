@@ -23,19 +23,15 @@ And here enters machine learning. At the core of our simulations we use a genera
 The beauty of this gravitational lensing effect is that by looking at images of galaxies, we can actually sense the unseen parts of the Universe. One of its most exciting applications is to investigate the nature of Dark Energy, a mysterious force that seems to be driving an accelerated expansion of the very fabric of the Universe.
  
  
- 
- 
- 
- 
 
 
+<hr>
 
-BIO
-\---------
- 
+<br>
+
 Francois Lanusse is a cosmologist at Carnegie Mellon University. Most of his research has been focused on building image and signal processing tools for various applications in cosmology and astrophysics.
 
-More at: flanusse.net.
+More at (link: http://flanusse.net/ text:  flanusse.net).
 
 ----
 

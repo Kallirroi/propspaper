@@ -20,13 +20,15 @@ The ability of an image to act as evidence also allows us to produce evidence by
 
 
 
+ <br>
+<hr>
+ <br>
 
-BIO
-\---------
- 
+
 Léopold Lambert is an architect[e], writer, editor, and podcaster based in Paris and New York. He is the editor-in-chief of The Funambulist Magazine, as well as its blog, and its podcast Archipelago. His published work Weaponized Architecture The Impossibility of Innocence (dpr-barcelona 2012) examines the inherent characteristics of architecture that systematically makes it a political weapon in general, and also more specifically in relation to the Occupied Palestinian Territories. 
-More of his work at thefunambulist.net.
+
+More of his work at (link: https://thefunambulist.net/ text: thefunambulist.net).
 
 ----
 
-Tags: polyplasmicpolitics,testTag
+Tags: polyplasmicpolitics

@@ -598,8 +598,8 @@ form.nav-alt-search {
   position:fixed;
   top:60px;
   right:200px;
-  width:278px;
-  height:410px;
+  width:300px;
+  height:440px;
   z-index:2000;
   border:1px solid #666;
   box-shadow: 5px 5px 5px rgba(102,102,102, 0.5);
