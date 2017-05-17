@@ -3,7 +3,7 @@
 <header class="header">
 	
 	<a class="title" >PROPS</a>
-	<div id="searchTerms"></div>
+	<span id="searchTerms"></span>
 	
 	<nav class="nav-alt">
 		<a id="trigger-info-modal"> INFO </a>

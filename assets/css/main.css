@@ -568,7 +568,7 @@ a.title {
   font-size: 50px;
   line-height: 50px;
   text-decoration: none;
-  font-family: 'Neue Haas Unica Pro Light' !important;
+  font-family: 'Neue Haas Unica Pro' !important;
 }
 
 a.title:hover {
@@ -631,10 +631,12 @@ form.nav-alt-search {
 #searchTerms {
   position: absolute;
   text-transform: uppercase;
-/*  width: 200px;
-  height: 20px;*/
-  font-size: 36px;
-  margin-top: 50px;
+  width: 100vw;
+  font-size: 50px;
+  line-height: 50px;
+  top: 0vh;
+  left: 12vw;
+  /*margin-top: 50px;*/
 }
 
 /*-------------------------------------------------*/

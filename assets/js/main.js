@@ -16,7 +16,7 @@ $(document).ready(function(){
 		$('#searchTerms').css('opacity', 0);
 	} 
 	else { //search page
-		$('#searchTerms').text(" "+terms);
+		$('#searchTerms').text(" for  "+terms);
 		$('#searchTerms').css('opacity', 1);
 	}
 
@@ -36,7 +36,7 @@ $(document).ready(function(){
 		e.preventDefault();	
 		var children = $('.post-meta ul li');
 		for (var i = children.length - 1; i >= 0; i--) {
-			children[i].style.transform = "skewX("+(Math.sin(e.pageY/(120 * i))) * 30+"deg)";
+			children[i].style.transform = "skewX("+(Math.sin(e.pageY/(120 * (i+0.1)))) * 30+"deg)";
 		}
 	})
 	.on('mouseout', function(e) {
