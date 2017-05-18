@@ -57,6 +57,7 @@ html {
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 article,
@@ -539,7 +540,7 @@ a.title:hover {
   padding-bottom: 15px;
   bottom: 0px;
   background: #fff;
-  width: 99%;
+  width: 100vw;
   z-index: 999;
   left: 0px;
   /*border: 1px solid;*/
@@ -654,12 +655,12 @@ a.info-modal-close , a.info-modal-close-contributors {
 /*-------------------------------------------------*/
 
 #indexSection {
-  overflow-x: scroll;
   overflow-y: hidden;
   height: 80vh;
   /*border: 1px solid;*/
   display: block !important;
   margin-top: 10vh;
+  width: 80vw;
 }
 
 #indexSection.post-container .post-item {
@@ -677,6 +678,36 @@ a.info-modal-close , a.info-modal-close-contributors {
 display: none;
 }
 
+/*-------------------------------------------------*/
+/* =  sidebar
+/*-------------------------------------------------*/
+#main {
+  width: 85vw;
+  height: 100vh;
+  overflow-x: scroll;
+}
+
+#sidebar {
+    background-color: #000;
+    width: 15vw;
+    height: 100vh;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    z-index: 3000;
+}
+#split-bar {
+    background-color:black;
+    height:100%;
+    float: left;
+    width: 6px;
+    cursor: col-resize;
+}
+
+a.sidebarImages > img{
+  width: 100px;
+  position: absolute;
+}
 
 /*-------------------------------------------------*/
 /* =  9.2 post-features
@@ -733,48 +764,6 @@ display: none;
   display: block;
 }
 
-.post-container .post-item header > a .post-overlay {
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(30, 30, 30, 0.25);
-  color: #fff;
-  text-align: center;
-  opacity: 0;
-  -webkit-transition-property: opacity;
-          transition-property: opacity;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-}
-
-.post-container .post-item header > a .post-overlay .post-logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.post-container .post-item header > a:hover .post-overlay {
-  opacity: 1;
-  -webkit-transition-property: opacity;
-          transition-property: opacity;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-}
-
-.post-container .post-item header > a:hover .post-overlay .post-logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
 
 
 /*-------------------------------------------------*/

@@ -59,6 +59,32 @@ $(document).ready(function(){
 		}		
 	});
 
+
+	/*-------------------------------------------------*/
+	//-------------------------Sidebar-------------------------
+	/*-------------------------------------------------*/
+
+	var min = 100;
+	var max = window.innerWidth;
+	var mainmin = 1000;
+	var currentSidebar = $('#sidebar').width();
+	var currentMain = $('#main').width();
+	$('#split-bar').mousedown(function (e) {
+	    e.preventDefault();
+	    $(document).mousemove(function (e) {
+	        e.preventDefault();
+	        var x = window.innerWidth - e.pageX;
+	        if (x > min && x < max && x < (300)) {  
+	          $('#sidebar').css("width", x);
+	          $('#main').css("width", currentMain+x);
+	        }
+	    })
+	});
+	$(document).mouseup(function (e) {
+	    $(document).unbind('mousemove');
+	});
+
+
 	// /*-------------------------------------------------*/
 	// //-------------------------Load Fonts-------------------------
 	// /*-------------------------------------------------*/
