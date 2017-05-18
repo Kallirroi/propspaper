@@ -14,4 +14,10 @@ Pagecontent:
 
 ----
 
-Text: A lot of people
+Text: 
+
+(link: http://flanusse.net/ text: Francois Lanusse)
+Prashast Thapan
+Lydia
+Leopold
+(link: www.gansterer.org text: Nikolaus Gansterer)

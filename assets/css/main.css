@@ -47,7 +47,7 @@
 /*-------------------------------------------------*/
 html {
   font-family: sans-serif;
-  cursor: url(../img/cursor.png), auto;
+  cursor: url(../img/cursor.png) 12 12, auto;
   /* 1 */
   -ms-text-size-adjust: 100%;
   /* 2 */
@@ -102,7 +102,7 @@ a {
 a:active,
 a:hover {
   outline: 0;
-  cursor: url(../img/hover.png), auto;
+  cursor: url(../img/hover.png) 12 12, auto;
 }
 
 abbr[title] {
@@ -311,7 +311,7 @@ a {
 }
 
 a:hover {
-  color: #60A2AE;
+  /*color: #60A2AE;*/
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.5s;
@@ -508,7 +508,7 @@ img {
 .header {
   position: fixed;
   display: block;
-  margin: 25px;
+  margin: 20px 25px 25px 25px;
   top: 0vh;
   /*border: 1px solid #1E1E1E;*/
 }
@@ -525,7 +525,7 @@ a.title {
 
 a.title:hover {
   color: #000;
-  cursor: url(../img/hover.png), auto;
+  cursor: url(../img/hover.png) 12 12, auto;
 }
 
 /*-------------------------------------------------*/
@@ -542,11 +542,12 @@ a.title:hover {
   width: 99%;
   z-index: 999;
   left: 0px;
+  /*border: 1px solid;*/
 }
 
 .nav-alt a {
   font-size: 30px;
-  cursor: url(../img/hover.png), auto;
+  cursor: url(../img/hover.png) 12 12, auto;
   text-decoration: none;
   padding-right: 100px;
   padding-left: 50px;
@@ -594,15 +595,29 @@ form.nav-alt-search {
 }
 
 /*-------------------------------------------------*/
-/* =  8. modal popup
+/* =  8. modal popups
 /*-------------------------------------------------*/
 
 
 /* Overlay style */
-.info-modal, .info-modal-contributors {
+.info-modal {
   position:fixed;
   top:60px;
   right:200px;
+  width:300px;
+  height: auto;
+  z-index:2000;
+  border:1px solid #666;
+  box-shadow: 5px 5px 5px rgba(102,102,102, 0.5);
+  background-color:#fff;
+  display:none;
+  cursor: move;
+  -webkit-overflow-scrolling: touch;
+}
+.info-modal-contributors {
+  position:fixed;
+  top:100px;
+  left:200px;
   width:300px;
   height: auto;
   z-index:2000;
@@ -619,7 +634,7 @@ a.info-modal-close , a.info-modal-close-contributors {
   text-decoration: underline;
   position: relative;
   z-index: 2001;
-  cursor: url(../img/hover.png), auto;
+  cursor: url(../img/hover.png) 12 12, auto;
   float: right;
   margin: 2px 2px 0 0;
 }
@@ -641,20 +656,20 @@ a.info-modal-close , a.info-modal-close-contributors {
 #indexSection {
   overflow-x: scroll;
   overflow-y: hidden;
-  height: 70vh;
+  height: 80vh;
   /*border: 1px solid;*/
   display: block !important;
-  margin-top: 16vh;
+  margin-top: 10vh;
 }
 
 #indexSection.post-container .post-item {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 60px;
+  margin-right: 60px;
   padding: 0 10px;
-  width: 300px !important;
+  width: 28vw !important;
   /*border: 1px solid;*/
   overflow-y: scroll !important;
-  height: 70vh;
+  height: 80vh;
 }
 
 
@@ -801,7 +816,7 @@ display: none;
   position: relative;
   width: 100%;
   margin-top: 20px;
-  height: 60vh;
+  height: 50vh;
   /*border: 1px solid;*/
 }
 
@@ -909,7 +924,7 @@ display: none;
 }
 
 .post-wrapper .post-content .post-meta .author a:hover {
-  color: #60A2AE;
+  /*color: #60A2AE;*/
 }
 
 .post-wrapper .post-content .post-meta .socbtn {
@@ -926,7 +941,7 @@ display: none;
 }
 
 .post-wrapper .post-content .post-meta .socbtn .share:hover {
-  color: #60A2AE;
+  /*color: #60A2AE;*/
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.5s;
@@ -969,7 +984,7 @@ display: none;
 }
 
 .post-wrapper .post-content .post-meta .socbtn .popup a:hover {
-  color: #60A2AE;
+  /*color: #60A2AE;*/
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.5s;

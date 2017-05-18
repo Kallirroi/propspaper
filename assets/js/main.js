@@ -8,16 +8,15 @@ $(document).ready(function(){
 	$("#draggable" ).draggable();
 
 	var issuesPublished = $('#indexSection').children().length;
-	var indexSectionWidth = 310/11*issuesPublished;
+	var indexSectionWidth = 400/11*issuesPublished;
 	$('#indexSection').css('width', indexSectionWidth+'%');
 
 	/*-------------------------------------------------*/
     //-------------------------PROPS FOR...... -------------------------
 	/*-------------------------------------------------*/
 	var query = window.location.href.split('tag:').slice(1).toString();
-
-	//have to replace %20 by a '   '
-	var terms = query.replace(/%20/g, ' ');
+	
+	var terms = query.replace(/%20/g, ' '); //have to replace %20 by a '   '
 
 	if (terms.toString() === "") { //main page
 		$('.title').show();
@@ -60,29 +59,27 @@ $(document).ready(function(){
 		}		
 	});
 
-	/*-------------------------------------------------*/
-	//-------------------------Load Fonts-------------------------
-	/*-------------------------------------------------*/
-    (function() {
-        var path = '//easy.myfonts.net/v2/js?sid=270903(font-family=Neue+Haas+Unica+Pro+Bold)&sid=270910(font-family=Neue+Haas+Unica+Pro+Medium)&sid=270912(font-family=Neue+Haas+Unica+Pro)&sid=270916(font-family=Neue+Haas+Unica+Pro+Ultra+Light)&key=6BGuzqFAWW',
-            protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
-            trial = document.createElement('script');
-        trial.type = 'text/javascript';
-        trial.async = true;
-        trial.src = protocol + path;
-        var head = document.getElementsByTagName("head")[0];
-        head.appendChild(trial);
-    })();
+	// /*-------------------------------------------------*/
+	// //-------------------------Load Fonts-------------------------
+	// /*-------------------------------------------------*/
+ //    (function() {
+ //        var path = '//easy.myfonts.net/v2/js?sid=270903(font-family=Neue+Haas+Unica+Pro+Bold)&sid=270910(font-family=Neue+Haas+Unica+Pro+Medium)&sid=270912(font-family=Neue+Haas+Unica+Pro)&sid=270916(font-family=Neue+Haas+Unica+Pro+Ultra+Light)&key=6BGuzqFAWW',
+ //            protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
+ //            trial = document.createElement('script');
+ //        trial.type = 'text/javascript';
+ //        trial.async = true;
+ //        trial.src = protocol + path;
+ //        var head = document.getElementsByTagName("head")[0];
+ //        head.appendChild(trial);
+ //    })();
 
 
 
 	/*-------------------------------------------------*/
 	/* =  search
 	/*-------------------------------------------------*/
-  
     $(".nav-alt-search").first().expandSearch();
 
-    	
     /*-------------------------------------------------*/
 	/* =  info modal popup
 	/*-------------------------------------------------*/
@@ -138,33 +135,6 @@ $(document).ready(function(){
 	    encodeURIComponent(url) + "&t=" +
 	    encodeURIComponent(title),
 	    "facebook", "height=300,width=550,resizable=1"
-	  );
-	});
-	});
-
-	var googleplus = document.querySelectorAll('.share--googleplus');
-	Array.prototype.forEach.call(googleplus, function(el, i){
-	el.addEventListener('click', function (e) {
-	  e.preventDefault();
-	  window.open( "https://plus.google.com/share?url=" +
-	    encodeURIComponent(url),
-	    "google +", "height=300,width=550,resizable=1"
-	  );
-	});
-	});
-
-
-	// Need and attibute data-image-url
-	var pinterest = document.querySelectorAll('.share--pinterest');
-	Array.prototype.forEach.call(pinterest, function(el, i){
-	el.addEventListener('click', function (e) {
-	  e.preventDefault();
-	  var imageUrl = this.getAttribute('data-image-url');
-	  window.open( "https://pinterest.com/pin/create/button/?url=" +
-	    encodeURIComponent(url) + '&media=' +
-	    encodeURIComponent(imageUrl) + '&description=' +
-	    encodeURIComponent(description),
-	    "pinterest", "height=300,width=550,resizable=1"
 	  );
 	});
 	});
