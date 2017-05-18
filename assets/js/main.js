@@ -8,7 +8,7 @@ $(document).ready(function(){
 	$("#draggable" ).draggable();
 
 	var issuesPublished = $('#indexSection').children().length;
-	var indexSectionWidth = 400/11*issuesPublished;
+	var indexSectionWidth = 410/11*issuesPublished;
 	$('#indexSection').css('width', indexSectionWidth+'%');
 
 	/*-------------------------------------------------*/
@@ -64,7 +64,7 @@ $(document).ready(function(){
 	//-------------------------Sidebar-------------------------
 	/*-------------------------------------------------*/
 
-	var min = 100;
+	var min = 180;
 	var max = window.innerWidth;
 	var mainmin = 1000;
 	var currentSidebar = $('#sidebar').width();
@@ -74,9 +74,8 @@ $(document).ready(function(){
 	    $(document).mousemove(function (e) {
 	        e.preventDefault();
 	        var x = window.innerWidth - e.pageX;
-	        if (x > min && x < max && x < (300)) {  
+	        if (x > min && x < max && x < 350) {  
 	          $('#sidebar').css("width", x);
-	          $('#main').css("width", currentMain+x);
 	        }
 	    })
 	});
