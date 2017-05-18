@@ -687,21 +687,33 @@ a.info-modal-close , a.info-modal-close-contributors {
 }
 
 #sidebar {
-    background-color: #000;
-    width: 12vw;
-    height: 100vh;
-    color: #fff;
-    position: absolute;
-    right: 0;
-    z-index: 3000;
-    overflow-y: scroll;
+  background-color: #000;
+  width: 12vw;
+  height: 100vh;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  z-index: 3000;
+  overflow-y: scroll;
 }
 #split-bar {
-    background-color: red;
-    height:100%;
-    float: left;
-    width: 6px;
-    cursor: col-resize;
+  background-color: #fff;
+  height: 100vh;
+  float: left;
+  width: 15px;
+  cursor: col-resize;
+}
+
+.verticalHandle {
+  display: inline-block;
+  position: relative;
+  top: 45vh;
+  left: 0.1vw;
+  height: 5vh;
+  width: 2px;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
 }
 
 a.sidebarImages > img {

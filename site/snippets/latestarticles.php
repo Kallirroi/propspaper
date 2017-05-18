@@ -1,7 +1,10 @@
 <!-- Latest articles -->
 <div id="sidebar"> 
 	
-    <div id="split-bar">  </div>
+    <div id="split-bar">  
+		<span class="verticalHandle"></span>
+		<span class="verticalHandle"></span>
+    </div>
 	<?php foreach($articles->sortBy('title', 'desc') as $article): ?>
 		<?php if($image = $article->images()->filterBy('name', '*=', 'props')->sortBy('sort', 'asc')->first()): ?>
 			<a class="sidebarImages" href="<?php echo $article->url() ?>">
