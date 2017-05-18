@@ -59,3 +59,5 @@ c::set('relativedate.fuzzy', false);
 c::set('relativedate.length', 1);
 c::set('markdown.extra', true);
 c::set('debug',true);
+c::set('thumbs.bin', '/usr/local/bin/convert');
+c::set('thumbs.driver', 'im');
