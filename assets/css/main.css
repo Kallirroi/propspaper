@@ -681,10 +681,15 @@ a.info-modal-close , a.info-modal-close-contributors {
 /*-------------------------------------------------*/
 /* =  sidebar
 /*-------------------------------------------------*/
+#indexButton {
+  opacity: 0;
+}
+
 #main {
   height: 100vh;
   overflow-x: scroll;
 }
+
 
 #sidebar {
   background-color: #000;
@@ -694,7 +699,7 @@ a.info-modal-close , a.info-modal-close-contributors {
   position: absolute;
   right: 0;
   z-index: 3000;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 #split-bar {

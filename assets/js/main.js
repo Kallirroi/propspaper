@@ -7,6 +7,14 @@ $(document).ready(function(){
 	/*-------------------------------------------------*/
 	$("#draggable" ).draggable();
 
+    /*-------------------------------------------------*/
+	/* =  Hide INDEX when on ISSUE page
+	/*-------------------------------------------------*/
+	if (window.location.href.split('issues').slice(1).toString().length === 0) {
+		$('#indexButton').css('opacity', 1);
+	}
+
+
 	var issuesPublished = $('#indexSection').children().length;
 	var indexSectionWidth = 410/11*issuesPublished;
 	$('#indexSection').css('width', indexSectionWidth+'%');
@@ -67,10 +75,6 @@ $(document).ready(function(){
 		$('#sidebar').css('width', '8vw');
 	})
 
-	/*-------------------------------------------------*/
-    //-------------------------Responsive sidebar space----------------
-	/*-------------------------------------------------*/
-	// $('a.sidebarImages > img').css('width', );
 
 	/*-------------------------------------------------*/
 	//-------------------------Sidebar-------------------------
@@ -113,11 +117,6 @@ $(document).ready(function(){
  //    })();
 
 
-
-	/*-------------------------------------------------*/
-	/* =  search
-	/*-------------------------------------------------*/
-    $(".nav-alt-search").first().expandSearch();
 
     /*-------------------------------------------------*/
 	/* =  info modal popup
