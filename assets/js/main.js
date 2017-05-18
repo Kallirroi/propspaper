@@ -59,23 +59,37 @@ $(document).ready(function(){
 		}		
 	});
 
+	/*-------------------------------------------------*/
+    //-------------------------INDEX button -------------------------
+	/*-------------------------------------------------*/
+	$('#indexButton').on('click', function(e){
+		e.preventDefault();
+		$('#sidebar').css('width', '8vw');
+	})
+
+	/*-------------------------------------------------*/
+    //-------------------------Responsive sidebar space----------------
+	/*-------------------------------------------------*/
+	// $('a.sidebarImages > img').css('width', );
 
 	/*-------------------------------------------------*/
 	//-------------------------Sidebar-------------------------
 	/*-------------------------------------------------*/
 
-	var min = 180;
+	var min = 15;
 	var max = window.innerWidth;
 	var mainmin = 1000;
 	var currentSidebar = $('#sidebar').width();
-	var currentMain = $('#main').width();
+	$('a.sidebarImages > img').css('width', currentSidebar/3);
+
 	$('#split-bar').mousedown(function (e) {
 	    e.preventDefault();
 	    $(document).mousemove(function (e) {
 	        e.preventDefault();
 	        var x = window.innerWidth - e.pageX;
-	        if (x > min && x < max && x < 350) {  
-	          $('#sidebar').css("width", x);
+	        if (x > min && x < max && x < 500) {  
+	          	$('#sidebar').css("width", x);
+				$('a.sidebarImages > img').css('width', x/4.5);
 	        }
 	    })
 	});
