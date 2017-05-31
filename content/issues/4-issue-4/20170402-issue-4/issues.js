@@ -1,4 +1,4 @@
-$('img')
+$('img.lazy-loaded')
 	.wrap('<span style="display:inline-block"></span>')
 	.css('display', 'block')
 	.parent()

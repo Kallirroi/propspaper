@@ -16,7 +16,7 @@
 		<div class="post-media">
 			<?php foreach($page->images()->filterBy('name', '*=', 'props')->sortBy('sort', 'asc') as $image): ?>
 				<figure>
-					<img class="lazy-loaded" 
+					<img class="lazy-loaded"
 						data-src="<?php echo thumb($image, array('width' => 940))->url() ?>"  
 						src="<?php echo thumb($image, array('width' => 940))->url() ?>" 
 						alt="<?php echo html($page->title()) ?>"
