@@ -29,12 +29,12 @@ $(document).ready(function(){
 	var terms = query.replace(/%20/g, ' '); //have to replace %20 by a '   '
 
 	if (terms.toString() === "") { //main page
-		$('.title').show();
+		// $('.title').show();
 		$('#searchTerms').css('opacity', 0);
 	} 
 	else { //search page
-		$('#searchTerms').text("PROPS for  "+terms);
-		$('.title').hide();
+		$('#searchTerms').text(" for  "+terms);
+		// $('.title').hide();
 		$('#searchTerms').css('opacity', 1);
 	}
 
