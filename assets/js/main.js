@@ -72,7 +72,8 @@ $(document).ready(function(){
 	/*-------------------------------------------------*/
 	$('#indexButton').on('click', function(e){
 		e.preventDefault();
-		$('#sidebar').css('width', '8vw');
+		$('#sidebar').css('width', '50vw');
+		$('a.sidebarImages > img').css('width', $('#sidebar').width()/6);
 	})
 
 
@@ -81,19 +82,16 @@ $(document).ready(function(){
 	/*-------------------------------------------------*/
 
 	var min = 15;
-	var max = window.innerWidth;
-	var mainmin = 1000;
-	var currentSidebar = $('#sidebar').width();
-	$('a.sidebarImages > img').css('width', currentSidebar/3);
+	var max = window.innerWidth/2;
 
 	$('#split-bar').mousedown(function (e) {
 	    e.preventDefault();
 	    $(document).mousemove(function (e) {
 	        e.preventDefault();
 	        var x = window.innerWidth - e.pageX;
-	        if (x > min && x < max && x < 500) {  
+	        if (x > min && x < max) {  
 	          	$('#sidebar').css("width", x);
-				$('a.sidebarImages > img').css('width', x/4.5);
+				$('a.sidebarImages > img').css('width', x/6);
 	        }
 	    })
 	});
