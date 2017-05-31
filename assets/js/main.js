@@ -10,11 +10,13 @@ $(document).ready(function(){
     /*-------------------------------------------------*/
 	/* =  Hide INDEX when on ISSUE page
 	/*-------------------------------------------------*/
-	if (window.location.href.split('issues').slice(1).toString().length === 0) {
-		$('#indexButton').css('opacity', 1);
-	}
+	// if (window.location.href.split('issues').slice(1).toString().length === 0) {
+	// 	$('#indexButton').css('opacity', 1);
+	// }
 
-
+	/*-------------------------------------------------*/
+	/* =  Make the width of the horizontal container adapt to the number of Issues
+	/*-------------------------------------------------*/
 	var issuesPublished = $('#indexSection').children().length;
 	var indexSectionWidth = 410/11*issuesPublished;
 	$('#indexSection').css('width', indexSectionWidth+'%');
@@ -74,27 +76,27 @@ $(document).ready(function(){
 		e.preventDefault();
 		$('#sidebar').css('width', '50vw');
 		$('a.sidebarImages > img').css('width', $('#sidebar').width()/6);
+		$('a.sidebarImages > span > img').css('width', $('#sidebar').width()/6);
 	})
 
 
 	/*-------------------------------------------------*/
-	//-------------------------Sidebar-------------------------
+	//-------------------------Sidebar responsiveness------------------
 	/*-------------------------------------------------*/
-
-	var min = 15;
-	var max = window.innerWidth/2;
 
 	$('#split-bar').mousedown(function (e) {
 	    e.preventDefault();
 	    $(document).mousemove(function (e) {
 	        e.preventDefault();
 	        var x = window.innerWidth - e.pageX;
-	        if (x > min && x < max) {  
+	        if (x > 15 && x < window.innerWidth/2) {  
 	          	$('#sidebar').css("width", x);
 				$('a.sidebarImages > img').css('width', x/6);
+				$('a.sidebarImages > span > img').css('width', x/6);
 	        }
 	    })
 	});
+
 	$(document).mouseup(function (e) {
 	    $(document).unbind('mousemove');
 	});
