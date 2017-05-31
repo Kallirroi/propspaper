@@ -16,8 +16,13 @@ Pagecontent:
 
 Text: 
 
-(link: http://flanusse.net/ text: Francois Lanusse)
-Prashast Thapan
-Lydia
-Leopold
-(link: www.gansterer.org text: Nikolaus Gansterer)
+(link: https://architecture.mit.edu/student/christianna-bonin text: Christianna Bonin) - Historian, Theorist
+(link: http://www.samjacob.com/ text: Sam Jacob)	- Architect
+(link: http://socks-studio.com/2012/07/22/hiroshi-hara-500x500x500-m-cube-1992/ text: Hiroshi Hara) - Architect
+(link: http://www.mfga.com/ text: Mark Foster Gage) - Architect
+(link: http://www.gansterer.org/ text: Nikolaus Gansterer) - Artist
+(link: https://thefunambulist.net/ text: Léopold Lambert) - Architect, Writer, Editor
+(link: http://www.anacycle.com/ text: Lydia Kallipoliti) - Architect, Engineer, and Theorist
+(link: http://prashast.in/ text: Prashast Thapan) - Jack of all trades
+(link: http://www.flanusse.net/ text: Francois Lanusse) - Cosmologist
+(link: http://sougwen.com/ text: Sougwen Chung) - Artist
