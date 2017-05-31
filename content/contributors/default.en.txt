@@ -16,6 +16,7 @@ Pagecontent:
 
 Text: 
 
+<br>
 (link: https://architecture.mit.edu/student/christianna-bonin text: Christianna Bonin) - Historian, Theorist
 (link: http://www.samjacob.com/ text: Sam Jacob)	- Architect
 (link: http://socks-studio.com/2012/07/22/hiroshi-hara-500x500x500-m-cube-1992/ text: Hiroshi Hara) - Architect
