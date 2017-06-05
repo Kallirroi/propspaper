@@ -5,10 +5,10 @@ $(document).ready(function(){
 	/*-------------------------------------------------*/
     //-------------------------Initialization -------------------------
 	/*-------------------------------------------------*/
-	$("#draggable" ).draggable();
+	$("section#draggable" ).draggable();
 
     /*-------------------------------------------------*/
-	/* =  Hide INDEX when on ISSUE page
+	/* =  Hide INDEX when on ISSUE page -------------------------------
 	/*-------------------------------------------------*/
 	// if (window.location.href.split('issues').slice(1).toString().length === 0) {
 	// 	$('#indexButton').css('opacity', 1);
@@ -39,14 +39,16 @@ $(document).ready(function(){
 	}
 
 	/*-------------------------------------------------*/
-	//-------------------------show back/front image-------------------------
+	//-------------------------Operations on images-------------------------
 	/*-------------------------------------------------*/
 
 	$('.post-item').on('mouseover', function(e) {
+		e.preventDefault();
 		var hovered = e.target;
 		var hoveredNumber = $(hovered).attr('alt');
 		$(hovered).attr('src', $(hovered).data('hover'));
 	}).mouseout(function (e) {
+		e.preventDefault();
 		var hovered = e.target;
 	 	$(hovered).attr('src', $(hovered).data("src"));
 	});
@@ -63,11 +65,15 @@ $(document).ready(function(){
 		}
 	})
 	.on('mouseout', function(e) {
+		e.preventDefault();	
 		var children = $('.post-meta ul li');
 		for (var i = children.length - 1; i >= 0; i--) {
 			children[i].style.transform = "skewX(0)";
 		}		
 	});
+
+
+
 
 	/*-------------------------------------------------*/
     //-------------------------INDEX button -------------------------
@@ -100,21 +106,6 @@ $(document).ready(function(){
 	$(document).mouseup(function (e) {
 	    $(document).unbind('mousemove');
 	});
-
-
-	// /*-------------------------------------------------*/
-	// //-------------------------Load Fonts-------------------------
-	// /*-------------------------------------------------*/
- //    (function() {
- //        var path = '//easy.myfonts.net/v2/js?sid=270903(font-family=Neue+Haas+Unica+Pro+Bold)&sid=270910(font-family=Neue+Haas+Unica+Pro+Medium)&sid=270912(font-family=Neue+Haas+Unica+Pro)&sid=270916(font-family=Neue+Haas+Unica+Pro+Ultra+Light)&key=6BGuzqFAWW',
- //            protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
- //            trial = document.createElement('script');
- //        trial.type = 'text/javascript';
- //        trial.async = true;
- //        trial.src = protocol + path;
- //        var head = document.getElementsByTagName("head")[0];
- //        head.appendChild(trial);
- //    })();
 
 
 
