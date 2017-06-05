@@ -1,4 +1,3 @@
-<!-- Informartion (About Us) -->
 
 <?php
 

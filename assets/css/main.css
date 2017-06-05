@@ -778,9 +778,11 @@ a.sidebarImages > img {
   position: relative;
 }
 
+
 .post-container .post-item header .post-image {
   overflow: hidden;
   display: block;
+  border: 1px solid #888;
   position: relative;
 }
 
