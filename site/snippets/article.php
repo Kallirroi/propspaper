@@ -14,7 +14,7 @@
 </div>
 <section class="post-wrapper">
 		<div class="post-media">
-			<?php foreach($page->images()->filterBy('name', '*=', 'props')->sortBy('sort', 'asc') as $image): ?>
+			<?php foreach($page->images()->filterBy('name', '*=', 'props')->sortBy('sort', 'asc')->flip() as $image): ?>
 				<figure>
 					<img class="lazy-loaded"
 						data-src="<?php echo thumb($image, array('width' => 940))->url() ?>"  
