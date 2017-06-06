@@ -4,6 +4,7 @@ return function($site, $pages, $page) {
 
   // get all articles and add pagination
   $articles = page('issues')->grandChildren()->visible();
+  $articlesSidebar = page('issues')->grandChildren()->visible();
 
   // perform search
   if ($query = get('s')) {
@@ -15,10 +16,11 @@ return function($site, $pages, $page) {
  
   // create a shortcut for pagination
   $articles = $articles->paginate(c::get('articles.postPerPage', 15));
+  $articlesSidebar = $articlesSidebar->paginate(c::get('articlesSidebar.postPerPage', 15));
   $pagination = $articles->pagination();
 
   // pass $articles and $pagination to the template
-  return compact('articles', 'pagination');
+  return compact('articles', 'articlesSidebar', 'pagination');
 };
 
  
