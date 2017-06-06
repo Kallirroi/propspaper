@@ -6,15 +6,9 @@
 				<figure>
 					<img class="lazy-loaded"
 						data-src="<?php echo thumb($image, array('width' => 940))->url() ?>"  
-						src="<?php echo thumb($image, array('width' => 940))->url() ?>" 
+						src="<?php echo thumb($image, array('width' => 400))->url() ?>" 
 						alt="<?php echo html($page->title()) ?>"
 					/>
-					<noscript>
-						<img 
-							src="<?php echo thumb($image, array('width' => 940))->url() ?>" 
-							alt="<?php echo html($page->title()) ?>"
-						/>
-					</noscript>
 				</figure>
 			<?php endforeach ?>
 
