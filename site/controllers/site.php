@@ -11,8 +11,11 @@ return function($site, $pages, $page) {
 	if($tag = param('tag')) {
 	  	$articles = $articles->filterBy('tags', $tag, ',');
 	}
+  echo("<script>console.log('PHP: ".$articles."');</script>");
 
 	// Return the list of projects and tags to template
     return compact('articles', 'tags', 'latestarticles');
 };
+
+
 ?>

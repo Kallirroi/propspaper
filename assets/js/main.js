@@ -7,12 +7,7 @@ $(document).ready(function(){
 	/*-------------------------------------------------*/
 	$("section#draggable" ).draggable();
 
-    /*-------------------------------------------------*/
-	/* =  Hide INDEX when on ISSUE page -------------------------------
-	/*-------------------------------------------------*/
-	// if (window.location.href.split('issues').slice(1).toString().length === 0) {
-	// 	$('#indexButton').css('opacity', 1);
-	// }
+
 
 	/*-------------------------------------------------*/
 	/* =  Make the width of the horizontal container adapt to the number of Issues
@@ -71,7 +66,6 @@ $(document).ready(function(){
 			children[i].style.transform = "skewX(0)";
 		}		
 	});
-
 
 
 

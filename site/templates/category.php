@@ -1,8 +1,6 @@
 
 <?php snippet('head') ?>
 
-<?php snippet('menu-categories') ?>
-
 <?php snippet('header') ?>
 
 <section class="category-header">
