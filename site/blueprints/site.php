@@ -54,4 +54,7 @@ fields:
     type: text
     icon: youtube
     width: 1/4
+  favicon:
+    type: image
+    label: favicon
 
