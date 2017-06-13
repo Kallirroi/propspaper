@@ -22,7 +22,10 @@
 
 
   <?php echo css('@auto') ?>
-  <?php echo css('assets/css/main.css') ?> 
+  <?php 
+  echo css('assets/css/main.css'); 
+  echo css('assets/css/mobile.css', 'only screen and (max-width: 840px)');
+  ?> 
   <?php echo css('assets/js/jquery-ui/jquery-ui.css') ?> 
   <?= css('assets/plugins/embed/css/embed.css') ?>
   <?php foreach($page->files()->filterBy('extension', 'css') as $css): ?>
