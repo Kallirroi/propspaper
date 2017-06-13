@@ -660,7 +660,6 @@ a.info-modal-close , a.info-modal-close-contributors {
   /*border: 1px solid;*/
   display: block !important;
   margin-top: 10vh;
-  width: 80vw;
 }
 
 #indexSection.post-container .post-item {

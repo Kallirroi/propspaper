@@ -13,14 +13,14 @@ $(document).ready(function(){
 	/* =  Make the width of the horizontal container adapt to the number of Issues
 	/*-------------------------------------------------*/
 	var issuesPublished = $('#indexSection').children().length;
-	var indexSectionWidth = 410/11*issuesPublished;
-	$('#indexSection').css('width', indexSectionWidth+'%');
+	// (width of .post-item + 100 + 100)
+	var indexSectionWidth = (400 + 75 + 75)*issuesPublished;
+	$('#indexSection').css('width', indexSectionWidth+'px');
 
 	/*-------------------------------------------------*/
     //-------------------------PROPS FOR...... -------------------------
 	/*-------------------------------------------------*/
 	var query = window.location.href.split('tag:').slice(1).toString();
-	
 	var terms = query.replace(/%20/g, ' '); //have to replace %20 by a '   '
 
 	if (terms.toString() === "") { //main page
