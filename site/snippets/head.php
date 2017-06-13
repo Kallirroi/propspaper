@@ -8,7 +8,9 @@
 
   <title><?php echo $site->title()->html() ?> | <?php echo $page->title()->html() ?></title>
   <meta name="description" content="<?php echo $site->description()->html() ?>">
-  <link rel="favicon" href="assets/img/favicon.png" type="image/png">
+
+  <link rel="icon" href="<?= url('favicon.png') ?> type="image/png">
+
   <?php snippet('opengraph') ?>
 
   <!-- Alternate languages url for SEO -->

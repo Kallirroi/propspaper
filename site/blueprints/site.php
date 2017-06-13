@@ -55,7 +55,6 @@ fields:
     icon: youtube
     width: 1/4
   favicon:
+    label: Favicon
     type: image
-    label: favicon
-    url: assets/img/favicon.png
 
