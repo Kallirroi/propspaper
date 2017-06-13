@@ -8,7 +8,7 @@ language: en
 role: admin
 history:
   - issues/issue-1/1
+  - issues/issue-3/issue-3
+  - issues/issue-7/issue-7
+  - issues/issue-10/issue-10
   - contributors
-  - issues/issue-30/issue-30
-  - issues/issue-30
-  - issues/issue-29/issue-29
