@@ -57,4 +57,5 @@ fields:
   favicon:
     type: image
     label: favicon
+    url: assets/img/favicon.png
 

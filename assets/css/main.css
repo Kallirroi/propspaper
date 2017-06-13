@@ -38,6 +38,7 @@
 }
 
 @import url('https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,500');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 
 /*-------------------------------------------------*/
 /* =  1. variables
@@ -46,7 +47,6 @@
 /* =  2. reset
 /*-------------------------------------------------*/
 html {
-  font-family: sans-serif;
   cursor: url(../img/cursor.png) 12 12, auto;
   /* 1 */
   -ms-text-size-adjust: 100%;
@@ -174,7 +174,6 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace;
   font-size: 1em;
 }
 
@@ -295,7 +294,7 @@ body {
   /*font-family: 'Neue Haas Unica Pro Medium';*/
   /*font-family: 'Neue Haas Unica Pro';*/
   /*font-family: 'Neue Haas Unica Pro Ultra Light';*/
-  font-family: 'Libre Franklin', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   color: #1E1E1E;
   letter-spacing: 0.5px;
@@ -519,8 +518,8 @@ a.title {
   line-height: 50px;
   text-decoration: none;
   /*font-family: 'Neue Haas Unica Pro' !important;*/
-  font-family: 'Libre Franklin', sans-serif;
-  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
 
 }
 
@@ -553,7 +552,7 @@ a.title:hover {
   padding-right: 100px;
   padding-left: 50px;
   /*font-family: 'Neue Haas Unica Pro';*/
-  font-family: 'Libre Franklin', sans-serif;
+  font-family: 'Roboto', sans-serif;
   
 }
 
