@@ -2,7 +2,62 @@
 
 
 
-@media (max-width: 840px) {
+@media (max-width: 847px) {
+
+  #indexButton {
+    display: none;
+  }
   
+  #screensaver {
+    display: none !important;
+  }
+
+  .header {
+    margin-top: 5vh;
+  }
+
+  .header > a {
+    font-size: 30px;
+  }
+
+  #indexSection {
+    margin-top: 20vh;
+  }
+
+  #indexSection.post-container .post-item {
+    width: 250px !important;
+    height: 65vh !important;
+  }
+
+  .post-content {
+    font-size: 15px;
+    line-height: 21px;
+    padding-right: 70px !important;
+  }
+
+  .post-container .post-item footer .post-meta { 
+    height: 20vh;
+  }
+  
+  .info-modal { 
+    left: 40px;
+    width:250px;
+  }
+
+  .info-modal-contributors {
+    left: 100px ;
+    width:280px;
+  }
+
+  #searchTerms {
+  position: absolute;
+  top: 5vh;
+  left: 0px;
+  font-size: 24px;
+  }
+
+  .nav-alt a {
+    font-size: 24px;
+  }
 
 }

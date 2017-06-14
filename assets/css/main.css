@@ -1,33 +1,11 @@
 @charset "UTF-8";
-/**
- * Main CSS
- *
- * @package    Pedesa Magazine Theme
- * @copyright  2017 Kalli
- *
- */
-/**
- * CONTENT:
- *
- *   0.  Fonts
- *   1.  Variables 
- *   2.  Reset
- *   3.  Typography
- *   4.  Tools
- *   5.  Owl-carousel (Categories Slider)
- *   6.  Header
- *   7.  Search
- *   8.  Modal Popup
- *   9.  Post Features
- *   10. Pagination
- *   11. Category Header
- *   12. Footer
- *   13. Responsive
- */
-/*-------------------------------------------------*/
-/* =  0. fonts
-/*-------------------------------------------------*/
 
+
+
+
+/*-------------------------------------------------*/
+/* =  1. fonts
+/*-------------------------------------------------*/
 
 @font-face {
   font-family: 'icomoon';
@@ -40,9 +18,6 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,500');
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
 
-/*-------------------------------------------------*/
-/* =  1. variables
-/*-------------------------------------------------*/
 /*-------------------------------------------------*/
 /* =  2. reset
 /*-------------------------------------------------*/
@@ -106,9 +81,6 @@ a:hover {
   cursor: url(../img/hover.png) 12 12, auto;
 }
 
-abbr[title] {
-  border-bottom: 1px dotted;
-}
 
 b,
 strong {
@@ -508,8 +480,7 @@ img {
 .header {
   position: fixed;
   display: block;
-  margin: 20px 25px 25px 25px;
-  top: 0vh;
+  margin: 30px 0px 0px 60px;
   /*border: 1px solid #1E1E1E;*/
 }
 
@@ -517,10 +488,8 @@ a.title {
   font-size: 50px;
   line-height: 50px;
   text-decoration: none;
-  /*font-family: 'Neue Haas Unica Pro' !important;*/
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  /*font-weight: 500;*/
 
 }
 
@@ -660,7 +629,7 @@ a.info-modal-close , a.info-modal-close-contributors {
   height: 80vh;
   /*border: 1px solid;*/
   display: block !important;
-  margin-top: 10vh;
+  margin-top: 13vh;
 }
 
 #indexSection.post-container .post-item {
@@ -1024,34 +993,6 @@ a.sidebarImages > img {
 /* =  13. responsive
 /*-------------------------------------------------*/
 
-
-/*@media (min-width: 71.25em) {*/
-  .header {
-    margin-left: 60px;
-    margin-right: 60px;
-  }
-  
-  body {
-    font-size: 20px;
-    line-height: 28px;
-  }
-  h1 {
-    font-size: 48px;
-    line-height: 48px;
-  }
-  h2 {
-    font-size: 36px;
-    line-height: 54px;
-  }
-  h3 {
-    font-size: 30px;
-    line-height: 30px;
-  }
-  h4 {
-    font-size: 24px;
-    line-height: 24px;
-  }
-
   .post-container {
     margin: 60px auto;
   }
@@ -1113,162 +1054,3 @@ a.sidebarImages > img {
     font-size: 40px;
   }
 
-/*
-
-@media (min-width: 64em) {
-  .header .logo img {
-    width: 72px;
-  }
-  .post-container .post-item {
-    width: calc(99.99% * 1/2 - 40px);
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .search-box input.search-bar { 
-    border: none;
-  }
-  .post-container .post-item footer {
-    padding: 0 20px;
-  }
-  .post-container .post-item footer .post-content {
-    padding: 0 20px;
-  }
-
-  .pagination {
-    padding: 110px 60px;
-  }
-  .pagination li {
-    margin: 0 20px;
-    display: inline-block;
-  }
-  .pagination li a {
-    font-size: 72px;
-    line-height: 72px;
-  }
-  .pagination li.button a.next,
-  .pagination li.button a.prev {
-    font-size: 24px;
-    letter-spacing: 3px;
-  }
-  .pagination li.button a.next:after,
-  .pagination li.button a.prev:after {
-    height: 50%;
-  }
-}
-
-
-@media (min-width: 37.5em) {
-  .header .logo img {
-    width: 72px;
-  } 
-  .search-box input.search-bar { 
-    border: none;
-  }   
-  .post-wrapper {
-    padding: 60px;
-  }
-  .post-wrapper .post-media {
-    width: calc(99.99% * 1/2 - (120px - 120px * 1/2));
-  }
-  .post-wrapper .post-media:nth-child(n) {
-    margin-right: 120px;
-    float: left;
-    clear: none;
-  }
-  .post-wrapper .post-media:last-child {
-    margin-right: 0;
-  }
-  .post-wrapper .post-media:nth-child(2n) {
-    margin-right: 0;
-    float: right;
-  }
-  .post-wrapper .post-media:nth-child(2n + 1) {
-    clear: left;
-  }
-  .post-wrapper .post-media figure {
-    padding-bottom: 60px;
-  }
-  .post-wrapper .post-content {
-    width: calc(99.99% * 1/2 - (120px - 120px * 1/2));
-  }
-  .post-wrapper .post-content:nth-child(n) {
-    margin-right: 120px;
-    float: left;
-    clear: none;
-  }
-  .post-wrapper .post-content:last-child {
-    margin-right: 0;
-  }
-  .post-wrapper .post-content:nth-child(2n) {
-    margin-right: 0;
-    float: right;
-  }
-  .post-wrapper .post-content:nth-child(2n + 1) {
-    clear: left;
-  }
-  .post-wrapper .post-content .post-meta {
-    margin-top: 60px;
-    padding: 60px 0;
-  }
-  .post-wrapper .post-content .post-meta .socbtn {
-    font-size: 16px;
-    line-height: 40px;
-  }
-  .post-wrapper .post-content .post-meta .socbtn .share {
-    font-size: 36px;
-  }
-  .post-wrapper .post-content .post-meta .socbtn:hover .popup {
-    top: -10px;
-  }
-  .post-wrapper .post-content .post-meta .socbtn .popup {
-    top: 0px;
-    left: -240px;
-    width: 300px;
-    height: 36px;
-    line-height: 50px;
-  }
-  .post-wrapper .post-content .post-meta .socbtn .popup a {
-    margin-top: 5px;
-    width: 40px;
-    height: 40px;
-    font-size: 36px;
-    line-height: 38px;
-  }
-}
-
-
-@media (min-width: 25.875em) {
-  .header .logo img {
-    width: 50px;
-  }  
-  .search-box input.search-bar { 
-    border: none;
-  }  
-  .main_category .title:hover h3 {
-    padding: 40px;
-  }
-  .main_category .title h3 {
-    font-size: 18px;
-  }
-  .pagination {
-    padding: 60px 20px;
-  }
-  .pagination li {
-    margin: 0 5px;
-    display: inline-block;
-  }
-  .pagination li a {
-    font-size: 36px;
-    line-height: 36px;
-  }
-  .pagination li.button a.next,
-  .pagination li.button a.prev {
-    font-size: 18px;
-    letter-spacing: 1px;
-  }
-  .pagination li.button a.next:after,
-  .pagination li.button a.prev:after {
-    height: 50%;
-  }
-}
-*/
