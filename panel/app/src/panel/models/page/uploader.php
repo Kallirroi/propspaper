@@ -65,7 +65,7 @@ class Uploader {
     touch($file->root());
 
     // clean the thumbs folder
-    $this->page->removeThumbs();
+    // $this->page->removeThumbs();
 
     kirby()->trigger($event, $file);          
 
@@ -92,7 +92,7 @@ class Uploader {
     touch($file->root());
 
     // clean the thumbs folder
-    $this->page->removeThumbs();
+    // $this->page->removeThumbs();
 
     kirby()->trigger($event, [$file, $old]);
 

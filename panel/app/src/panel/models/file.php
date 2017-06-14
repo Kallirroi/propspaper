@@ -101,7 +101,7 @@ class File extends \File {
     $filename = parent::rename($name, $safeName);
 
     // clean the thumbs folder
-    $this->page()->removeThumbs();
+    // $this->page()->removeThumbs();
 
     // trigger the rename hook
     kirby()->trigger($event, array($this, $old));          
@@ -177,7 +177,7 @@ class File extends \File {
     parent::delete();
 
     // clean the thumbs folder
-    $this->page()->removeThumbs();
+    // $this->page()->removeThumbs();
 
     kirby()->trigger($event, $this);    
 

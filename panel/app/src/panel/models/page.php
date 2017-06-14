@@ -265,7 +265,7 @@ class Page extends \Page {
     $this->changes()->update($changes);
 
     // remove all thumbs for the old id
-    $old->removeThumbs();
+    // $old->removeThumbs();
 
     // hit the hook
     kirby()->trigger('panel.page.move', [$this, $old]);
@@ -460,7 +460,7 @@ class Page extends \Page {
     $this->changes()->discard();
 
     // delete all associated thumbs
-    $this->removeThumbs();
+    // $this->removeThumbs();
 
     // hit the hook
     kirby()->trigger($event, $this);

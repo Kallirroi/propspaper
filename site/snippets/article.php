@@ -1,4 +1,4 @@
-<?php snippet('sidebar') ?>
+<?php snippet('sidebarSnippet') ?>
 
 <section class="post-wrapper">
 		<div class="post-media">

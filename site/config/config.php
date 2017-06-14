@@ -61,3 +61,4 @@ c::set('markdown.extra', true);
 c::set('debug',true);
 c::set('thumbs.bin', '/usr/local/bin/convert');
 c::set('thumbs.driver', 'im');
+c::set('panel.thumb.generation.maxdimension', 5000);

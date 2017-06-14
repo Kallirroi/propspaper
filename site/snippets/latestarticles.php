@@ -1,4 +1,4 @@
-<?php snippet('sidebar') ?>
+<?php snippet('sidebarSnippet') ?>
 
 <div id="main">
 <section class="post-container"  id="indexSection">
