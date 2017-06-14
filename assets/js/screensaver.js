@@ -10,7 +10,7 @@ var screensaver = (function($) {
 		_timeoutTracking = false;
 	
 	function start() {
-		console.log('Screensaver.start()');
+		// console.log('Screensaver.start()');
 
 
 		var $cont = $('#screensaver');
@@ -39,7 +39,7 @@ var screensaver = (function($) {
 	}
 
 	function stop() {
-		console.log('  stop()');
+		// console.log('  stop()');
 
 	
 		var $ss = $('#screensaver');
@@ -59,7 +59,7 @@ var screensaver = (function($) {
 	}
 
 	function mouseMoving() {
-		console.log('  mouseMoving()');
+		// console.log('  mouseMoving()');
 
 		clearTimeout(_timeoutTracking);
 		
@@ -71,7 +71,7 @@ var screensaver = (function($) {
 	}
 
 	function initMouseTracking() {
-		console.log('  initMouseTracking()');
+		// console.log('  initMouseTracking()');
 
 		var $cont = $('#screensaver');
 
@@ -90,14 +90,14 @@ var screensaver = (function($) {
 	}
 
 	function stopMouseTracking() {
-		console.log('  stopMouseTracking()');
+		// console.log('  stopMouseTracking()');
 
 		$('body').unbind('mousemove');
 		clearTimeout(_timeoutTracking);
 	}
 
 	function gotoNext() {
-		console.log('  gotoNext()');
+		// console.log('  gotoNext()');
 
 		var 
 			$cont = $('#screensaver'),
@@ -145,7 +145,7 @@ var screensaver = (function($) {
 			_durationBeforeActivateSS = $ss.data('duration-start');
 
 			$ss.click(function() {
-				console.log('Screensaver.click()');
+				// console.log('Screensaver.click()');
 
 				stop();
 			});

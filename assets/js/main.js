@@ -15,8 +15,7 @@ $(document).ready(function(){
 	var issuesPublished = $('#indexSection').children().length;
 	// (width of .post-item + 100 + 100)
 	var currentWidth = $('#indexSection').find('.post-item').width();
-	console.log(currentWidth)
-	var indexSectionWidth = (currentWidth + currentWidth/3.2 + currentWidth/3.2)*issuesPublished;
+	var indexSectionWidth = (currentWidth + currentWidth/5 + currentWidth/5)*issuesPublished;
 	$('#indexSection').css('width', indexSectionWidth+'px');
 
 	/*-------------------------------------------------*/
