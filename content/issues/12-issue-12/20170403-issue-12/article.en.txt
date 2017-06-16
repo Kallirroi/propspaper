@@ -12,6 +12,47 @@ Author: kallirroi
 
 Text: 
 
+PROPS: What is the role of images in your research?
+ 
+Sougwen Chung: The role of images in my research is linked to ways in which interface design shapes image-making. For years I've had an interest in exploring how an interface operates as a layer of mediation in creative process.
+ 
+My practice is motivated by a curiosity regarding this layer of mediation, of “being on the boundary”1. This approach is part of a philosophy of making that speaks to the aesthetics of the near-future, inherently and by extension. It does so through the mediums of performance, installation, and moving image.
+
+The fields of human-computer interaction, artificial intelligence, and machine learning are complex, involving layers of computational abstractions and a technical lexicon often inaccessible to people outside of their respective research areas. As such, the fields benefit from a narrative context to communicate their significance to a wider audience. 
+ 
+One such context has been in the arena of competitive game-play. The narrative of games provides cultural reach as well as defined parameters of success. Watson, AlphaGo, and Libratus are centerpieces around which computational abstractions of human computer interaction, artificial intelligence, and machine learning can assemble2.  However, the easy communicability of competition reinforces the adversarial dynamic of human vs machine already prevalent in popular cultural discourse.
+ 
+My recent project, Drawing Operations, presents an alternative. In Drawing Operations, I engage in a drawing performance with a robotic arm as an exploration of human and machine collaboration.
+ 
+The co-creation of an image between human and machine reframes the conventional narrative assigned to artificial intelligence. It sets the stage for a broader cultural understanding of the field and posits a different set of research goals. Conceptually, collaboration extends the interaction of human and machine to that of a creative partnership (however aspirationally). Additionally, it invites the subjective assessment of an audience as well as inspiring research goals defined by aesthetics, interaction, and craft. The role of images, in this case, creates space for comprehensive exploratory narratives to emerge. (Sometimes counterpoint, sometimes polyphony.)
+ 
+AI Researcher Fei-Fei Li says that if we want machines to think, we need to teach them to see3. In addition to teaching machines how to see, as we speculate upon modes of vision and cognition dissimilar to our own, we are also teaching them what to see.
+ 
+**Drawing Operations**
+In Drawing Operations, the role of images is two-fold. As input, they are firing the synapses of the machine which cause it to move. As output, they are objects of aesthetic inquiry.
+ 
+**Input: Behaviour & Process**
+The behavior of the machine is driven by learning algorithms trained on images from a variety of sources. These images are derived from art historical archives as well as the works of contemporary artists. By using computer vision, video analytics, and machine learning, I interpret contemporary and historical image sets to glean meaningful gestural behaviour. 
+ 
+From there, these behaviors are taken into the context of a collaborative performance. Within this collaboration, Drawing Operations aims to showcase a confluence of biological and mechanical modes of sensing, cognizing, interpreting, and mark-making.
+ 
+**Output: Aesthetics**
+“When the image is new, the world is new.”4
+The speculative nature of the project is advanced by the interoperability of visual artifacts as concrete representations of research, sites of aesthetic comprehension, and objects within themselves. (The wreck and not the story of the wreck, the thing itself and not the myth.)5
+ 
+As aesthetic inquiry: what forms emerge as a result of human and machine collaboration? What new types of information can be encoded in a single image? How do unfamiliar aesthetics stimulate new ways of seeing, sensing and decoding in the viewer?
+ 
+**Conclusion**
+Today, the interface is not simply a mediating apparatus for creation but a speculative agent of co-creation. As a result, in projects like Drawing Operations, the role of the image is multifaceted. The image functions not only as an aesthetic object, but a visual artifact showcasing the intersection of artistic practice and machine learning. 
+ 
+For me, the project's continued evolution teases at some creative possibilities of the near-future. Beyond traditional anthropocentrism, and towards a promiscuously inclusive array of cognizing agents — mechanical and biological, singular and composite, discovered and soon-to-be discovered.
+ 
+1. Galloway, Alexander R. The Interface Effect. Oxford: Wiley, 2013. Print.
+2. Metz, Cade. "Inside Libratus, the Poker AI That Out-Bluffed the Best Humans." Wired. Conde Nast, 01 Feb. 2017. Web. 29 Mar. 2017.
+3. McNeal, Marguerite. "Fei-Fei Li: If We Want Machines to Think, We Need to Teach Them to See." Wired. Conde Nast, 06 Aug. 2015. Web. 29 Mar. 2017.
+4. Bachelard, Gaston, Maria Jolas, Mark Z. Danielewski, and Richard Kearney. The Poetics of Space. New York: Penguin, 2014. Print.
+5. Rich, Adrienne. Diving into the Wreck: Poems 1971/1972. New York: W.W. Norton, 2013. Print.
+
 ----
 
 Tags: 
