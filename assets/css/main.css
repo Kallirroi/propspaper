@@ -753,13 +753,15 @@ a.sidebarImages > img {
   display: block;
   /*border: 1px solid #ccc;*/
   position: relative;
+  height: 566px;
 }
 
 .post-container .post-item header .post-image > img {
   width: 100%;
   height: auto;
-  display: block;
-}
+  vertical-align: middle;
+  position: relative;
+} 
 
 .post-container .post-item header .post-image > a {
   display: block;
