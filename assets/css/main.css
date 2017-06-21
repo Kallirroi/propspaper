@@ -646,8 +646,7 @@ a.info-modal-close , a.info-modal-close-contributors {
   transform: translateY(-15vh);
   transition-duration: 0.5s;
 }*/
-
-::-webkit-scrollbar {
+.post-item::-webkit-scrollbar {
   display: none;
 }
 
