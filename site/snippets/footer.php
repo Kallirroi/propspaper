@@ -9,7 +9,7 @@
 	<?php echo js("assets/js/isotope.js") ?>
 	<?php echo js("assets/js/modernizr.custom.js") ?>
 	<?php echo js("assets/js/jquery-zoom/jquery.zoom.js") ?>
-  	<?php snippet('analytics') ?>
+  	<?php echo analytics() ?>
 	<?= js('assets/plugins/embed/js/embed.js') ?>
 	
   	<!-- custom javascript -->
