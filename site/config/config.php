@@ -63,5 +63,5 @@ c::set('thumbs.bin', '/usr/local/bin/convert');
 c::set('thumbs.driver', 'im');
 c::set('panel.thumb.generation.maxdimension', 5000);
 c::set('analytics', true);
-c::set('analytics.id', 'UA-000000-01');
+c::set('analytics.id', 'UA-101456930-1');
 c::set('analytics.anonymize', true);
