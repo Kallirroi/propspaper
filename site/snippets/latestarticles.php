@@ -5,12 +5,13 @@
 		<?php foreach($articles->sortBy('title', 'desc') as $article): ?>
 			<article class="post-item grid-sizer">	
 				<header>
-					<?php if($image = $article->images()->filterBy('name', '*=', 'props')->sortBy('sort', 'asc')->flip()->first()): ?>
+					<?php if( $image = $article->images()->filterBy('name', '*=', 'front')->sortBy('sort', 'asc')->flip()->first() ): ?>
 						<div class="post-image" >								
 							<a href="<?php echo $article->url() ?>">
+								<!-- hover effect -->
 								<img id="mainPageImages<?php echo html($article->title()) ?>" class="lazy-loaded" 
 								data-src="<?php echo thumb($image, array('width' => 515))->url() ?>"  
-								data-hover="<?php echo thumb($article->images()->filterBy('name', '*=', 'props')->sortBy('sort', 'asc')->first(), array('width' => 515))->url() ?>" 
+								data-hover="<?php echo thumb($article->images()->filterBy('name', '*=', 'back')->sortBy('sort', 'asc')->first(), array('width' => 515))->url() ?>" 
 								src="<?php echo thumb($image, array('width' => 515))->url() ?>" 
 								alt="<?php echo html($article->title()) ?>"
 									/>
