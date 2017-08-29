@@ -11,6 +11,8 @@
 	<?php echo js("assets/js/jquery-zoom/jquery.zoom.js") ?>
   	<?php echo analytics() ?>
 	<?= js('assets/plugins/embed/js/embed.js') ?>
+	<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+	
 	
   	<!-- custom javascript -->
 	<?php foreach($page->files()->filterBy('extension', 'js') as $js): ?>

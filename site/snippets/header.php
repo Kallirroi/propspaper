@@ -7,6 +7,7 @@
 		<a id="trigger-info-modal"> INFO </a>
 		<a id="trigger-info-modal-contributors"> CONTRIBUTORS </a>
 		<a id="indexButton">INDEX</a>
+		<a id="open-popup">SUBSCRIBE</a>
 	</nav>
 </header>
 

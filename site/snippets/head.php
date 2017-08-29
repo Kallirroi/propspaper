@@ -11,6 +11,7 @@
 
   <link rel="icon" href="https://raw.githubusercontent.com/Kallirroi/propspaper/master/favicon.png" type="image/png">
 
+
   <?php snippet('opengraph') ?>
 
   <!-- Alternate languages url for SEO -->
