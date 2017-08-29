@@ -122,10 +122,16 @@ $(document).ready(function(){
  	
 	function showMailingPopUp() {
 	    require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us16.list-manage.com","uuid":"49fafba10129670d38e58ede8","lid":"2a6794e760"}) })
-	    document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+	    // debugger;
+	    // document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+	    document.cookie = 'MCPopupClosed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;';
 	};
 
-	document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
+	document.getElementById("open-popup")
+	.addEventListener('click', function(event) {
+	  showMailingPopUp();
+	})
+
 
     /*-------------------------------------------------*/
 	/* =  contributors modal popup
